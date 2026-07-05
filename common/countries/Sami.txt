@@ -1,0 +1,9 @@
+
+
+graphical_culture = sami_gfx
+graphical_culture_2d = sami_2d
+
+color = rgb { 192 186 64 }
+
+#BLUE 161, 202, 238
+#LIGHT LAVENDER 204, 185, 238

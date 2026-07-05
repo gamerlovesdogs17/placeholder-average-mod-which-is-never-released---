@@ -1,0 +1,1644 @@
+#Alternative Colours by pureJayJay
+
+### [Britain]
+ENG = {
+	color = rgb { 146 12 22 }
+	color_ui = rgb { 176 42 52 }
+}
+SCO = {
+	color = rgb { 182 172 0 }
+	color_ui = rgb { 212 202 0 }
+}
+WLS = {
+	color = rgb { 185 35 0 }
+	color_ui = rgb { 215 65 0 }
+}
+NIR = {
+	color = rgb { 155 83 11 }
+	color = rgb { 185 113 41 }
+}
+CAN = { #Free Canada
+	color = rgb { 203 29 29 }
+	color_ui = rgb { 233 59 59 }
+}
+RAJ = { #Free India
+	color = rgb { 176 85 10 }
+	color_ui = rgb { 186 115 40 }
+}
+MAL = { #Free Malaysia
+	color = rgb { 167 76 80 }
+	color_ui = rgb { 197 106 110 }
+}
+AST = {
+	color = rgb { 27 103 67 }
+	color_ui = rgb { 57 133 97 }
+}
+NZL = {
+	color = rgb { 92 70 131 }
+	color_ui = rgb { 122 100 161 }
+}
+SAF = {
+	#Purple Version
+	#color = rgb { 165 77 130 }
+	#color_ui = rgb { 195 77 160 }
+	#Orange Version
+	color = rgb { 170 71 0 }
+	color_ui = rgb { 200 101 0 }
+}
+CYP = {
+	color = rgb { 215 164 0 }
+	color_ui = rgb { 245 194 0 }
+}
+
+### [Italy]
+ITA = {
+	color = rgb { 47 97 43 }
+	color_ui = rgb { 77 127 73 }
+}
+LBV = {
+	color = rgb { 149 6 34 }
+	color_ui = rgb { 179 12 64 }
+}
+PAP = {
+	color = rgb { 197 197 124 }
+	color_ui = rgb { 227 227 154 }
+}
+TOS = {
+	color = rgb { 198 97 103 }
+	color_ui = rgb { 228 127 133 }
+}
+SPM = {
+	color = rgb { 20 140 170 }
+	color_ui = rgb { 50 170 200 }
+}
+TTS = {
+	color = rgb { 191 164 17 }
+	color_ui = rgb { 221 194 47 }
+}
+AOI = {
+	color = rgb { 67 117 63 }
+	color_ui = rgb { 97 147 93 }
+}
+MLT = {
+	color = rgb { 215 215 113 }
+	color_ui = rgb { 245 245 143 }
+}
+
+### [Japan]
+JAP = {
+	color = rgb { 205 171 171 }
+	color_ui = rgb { 235 201 201 }
+}
+MEN = {
+	color = rgb { 125 165 92 }
+	color_ui = rgb { 155 195 122 }
+}
+MAN = {
+	color = rgb { 175 70 21 }
+	color_ui = rgb { 205 100 51 }
+}
+KOR = {
+	color = rgb { 215 210 165 }
+	color_ui = rgb { 245 240 195 }
+}
+
+### [Yugoslavia]
+YUG = {
+	color = rgb { 42 43 96 }
+	color_ui = rgb { 72 73 126 }
+}
+SER = {
+	color = rgb { 60 50 70 }
+	color_ui = rgb { 90 80 100 }
+}
+CRO = {
+	color = rgb { 180 40 150 }
+	color_ui = rgb { 230 70 180 }
+}
+SLV = {
+	color = rgb { 72 138 215 }
+	color_ui = rgb { 102 168 245 }
+}
+BOS = {
+	color = rgb { 184 82 35 }
+	color_ui = rgb { 214 112 65 }
+}
+HRZ = {
+	color = rgb { 42 63 140 }
+	color_ui = rgb { 72 93 170 }
+}
+MNT = {
+	color = rgb { 47 60 75 }
+	color_ui = rgb { 77 90 105 }
+}
+KOS = {
+	color = rgb { 178 126 50 }
+	color_ui = rgb { 208 156 80 }
+}
+MAC = {
+	color = rgb { 155 41 41 }
+	color_ui = rgb { 185 71 71 }
+}
+TRA = {
+	color = rgb { 151 157 123 }
+	color_ui = rgb { 181 187 153 }
+}
+
+### [Germany]
+GER = {
+	color = rgb { 75 75 75 }
+	color_ui = rgb { 105 105 105 }
+}
+BAY = {
+	color = rgb { 183 201 216 }
+	color_ui = rgb { 213 231 246 }
+}
+MEK = {
+	color = rgb { 146 175 66 }
+	color_ui = rgb { 176 205 96 }
+}
+PRE = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 130 130 130 }
+}
+SAX = {
+	color = rgb { 82 92 5 }
+	color_ui = rgb { 212 222 10 }
+}
+HAN = {
+	color = rgb { 205 60 0 }
+	color_ui = rgb { 235 90 0 }
+}
+WUR = {
+	color = rgb { 205 154 103 }
+	color_ui = rgb { 235 184 123 }
+}
+SHL = {
+	color = rgb { 31 31 175 }
+	color_ui = rgb { 61 61 205 }
+}
+THU = {
+	color = rgb { 0 41 133 }
+	color_ui = rgb { 0 71 163 }
+}
+HES = {
+	color = rgb { 155 59 59 }
+	color_ui = rgb { 185 89 89 }
+}
+RHI = {
+	color = rgb { 0 103 51 }
+	color_ui = rgb { 0 133 81 }
+}
+
+### [Reichskommisariats]
+UBD = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 130 130 130 }
+}
+RKB = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 130 130 130 }
+}
+RKN = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 130 130 130 }
+}
+RKG = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 130 130 130 }
+}
+RKU = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 130 130 130 }
+}
+RKO = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 130 130 130 }
+}
+RKK = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 130 130 130 }
+}
+RKT = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 130 130 130 }
+}
+RKM = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 130 130 130 }
+}
+RKL = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 130 130 130 }
+}
+GEN = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 130 130 130 }
+}
+RKH = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 130 130 130 }
+}
+RKI = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 130 130 130 }
+}
+RKC = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 130 130 130 }
+}
+RGB = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 130 130 130 }
+}
+RKA = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 130 130 130 }
+}
+RNA = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 130 130 130 }
+}
+RKV = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 130 130 130 }
+}
+RAN = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 130 130 130 }
+}
+RCO = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 130 130 130 }
+}
+RUS = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 130 130 130 }
+}
+RHD = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 130 130 130 }
+}
+RAR = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 130 130 130 }
+}
+ROA = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 130 130 130 }
+}
+RAA = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 130 130 130 }
+}
+
+### [France]
+FRA = {
+	color = rgb { 35 73 135 }
+	color_ui = rgb { 65 103 165 }
+}
+OCC = {
+	color = rgb { 57 174 174 }
+	color_ui = rgb { 87 204 204 }
+}
+BRI = {
+	color = rgb { 97 79 102 }
+	color_ui = rgb { 127 109 132 }
+}
+COR = {
+	color = rgb { 67 158 26 }
+	color_ui = rgb { 97 188 56 }
+}
+
+### [Spain]
+SPR = {
+	color = rgb { 192 155 44 }
+	color_ui = rgb { 222 185 74 }
+}
+CAT = {
+	color = rgb { 183 92 46 }
+	color_ui = rgb { 193 122 76 }
+}
+NAV = {
+	color = rgb { 206 183 36 }
+	color_ui = rgb { 236 213 66 }
+}
+GLC = {
+	color = rgb { 194 113 95 }
+	color_ui = rgb { 224 143 125 }
+}
+
+
+### [Scandinavia]
+SWE = {
+	#Old Blue Version
+	#color = rgb { 6 102 217 }
+	#color_ui = rgb { 36 132 247 }
+	#New Blue Version
+	color = rgb { 32 74 169 }
+	color_ui = rgb { 62 104 139 }
+}
+NOR = {
+	#Blue Version
+	#color = rgb { 115 158 152 }
+	#color_ui = rgb { 145 188 182 }
+	#Brown Version
+	color = rgb { 81 41 41 }
+	color_ui = rgb { 111 71 71 }	
+}
+DEN = {
+	color = rgb { 103 76 53 }
+	color_ui = rgb { 133 106 83 }
+}
+FIN = {
+	color = rgb { 175 192 198 }
+	color_ui = rgb { 205 212 228 }
+}
+ICE = {
+	color = rgb { 50 65 115 }
+	color_ui = rgb { 80 95 145 }
+}
+GRN = {
+	color = rgb { 195 95 70 }
+	color_ui = rgb { 235 125 100 }
+}
+SMI = {
+	color = rgb { 192 186 64 }
+	color_ui = rgb { 222 216 94 }
+}
+KAR = {
+	color = rgb { 0 113 31 }
+	color_ui = rgb { 0 143 61 }
+}
+
+### [Western Europe]
+AUS = {
+	color = rgb { 164 168 185 }
+	color_ui = rgb { 194 198 215 }
+}
+HOL = {	
+	color = rgb { 181 86 18 }
+	color_ui = rgb { 211 116 48 }
+}
+POR = {
+	color = rgb { 9 86 40 }
+	color_ui = rgb { 39 116 70 }
+}
+BEL = { 
+	color = rgb { 163 141 8 }
+	color_ui = rgb { 193 171 38 }
+}
+LUX = {
+	color = rgb { 35 145 149 }
+	color_ui = rgb { 75 175 179 }
+}
+SWI = {
+	color = rgb { 174 3 3 }
+	color_ui = rgb { 204 33 33 }
+}
+IRE = {
+	color = rgb { 50 129 60 }
+	color_ui = rgb { 80 159 90 }
+}
+
+### [Soviet Union]
+SOV = {
+	color = rgb { 125 3 14 }
+	color_ui = rgb { 155 6 44 }
+}
+UKR = {
+	color = rgb { 0 40 190 }
+	color_ui = rgb { 0 80 230 }	
+}
+BLR = {
+	color = rgb { 140 170 150 }
+	color_ui = rgb { 170 200 180 }
+}
+CRI = {
+	color = rgb { 205 30 30 }
+	color_ui = rgb { 235 50 50 }
+}
+KAZ = {
+	color = rgb { 45 154 173 }
+	color_ui = rgb { 75 164 203 }
+}
+UZB = {
+	color = rgb { 0 82 82 }
+	color_ui = rgb { 0 112 112 }
+}
+TMS = {
+	color = rgb { 28 46 133 }
+	color_ui = rgb { 58 76 163 }
+}
+KYR = {
+	color = rgb { 118 46 19 }
+	color_ui = rgb { 148 76 49 }
+}
+TAJ = {
+	color = rgb { 21 87 13 }
+	color_ui = rgb { 51 117 43 }
+}
+AZR = {
+	color = rgb { 59 98 39 }
+	color_ui = rgb { 89 128 69 }
+}
+GEO = {
+	color = rgb { 185 140 140 }
+	color_ui = rgb { 215 170 170 }
+}
+ARM = {
+	color = rgb { 136 72 140 }
+	color_ui = rgb { 166 102 170 }
+}
+DON = {
+	color = rgb { 139 79 0 }
+	color_ui = rgb { 169 109 0 }
+}
+KUB = {
+	color = rgb { 51 51 82 }
+	color_ui = rgb { 81 81 112 }
+}
+EVE = {
+	color = rgb { 10 79 109 }
+	color_ui = rgb { 40 109 139 }
+}
+
+### [Siberia&Steppes]
+ALT = {
+	color = rgb { 174 215 225 }
+	color_ui = rgb { 204 245 255 }
+}
+KAL = {
+	color = rgb { 215 164 0 }
+	color_ui = rgb { 245 194 0 }
+}
+TAT = {
+	color = rgb { 215 21 0 }
+	color_ui = rgb { 245 51 0 }
+}
+CIN = {
+	color = rgb { 0 164 0 }
+	color_ui = rgb { 0 194 0 }
+}
+DAG = {
+	color = rgb { 0 164 215 }
+	color_ui = rgb { 0 194 245 }
+}
+BYA = {
+	color = rgb { 0 24 215 }
+	color_ui = rgb { 0 54 245 }
+}
+FER = {
+	color = rgb { 139 15 0 }
+	color_ui = rgb { 169 45 0 }
+}
+CKK = {
+	color = rgb { 139 139 0 }
+	color_ui = rgb { 169 169 0 }
+}
+YAK = {
+	color = rgb { 0 215 215 }
+	color_ui = rgb { 0 245 245 }
+}
+VLA = {
+	color = rgb { 195 144 20 }
+	color_ui = rgb { 225 174 50 }
+}
+KKP = {
+	color = rgb { 205 88 0 }
+	color_ui = rgb { 235 118 0 }
+}
+YAM = {
+	color = rgb { 144 113 0 }
+	color_ui = rgb { 174 143 0 }
+}
+TAY = {
+	color = rgb { 0 62 113 }
+	color_ui = rgb { 0 92 143 }
+}
+OVO = {
+	color = rgb { 31 93 61 }
+	color_ui = rgb { 61 123 91 }
+}
+NEN = {
+	color = rgb { 164 215 174 }
+	color_ui = rgb { 194 245 204 }
+}
+KOM = {
+	color = rgb { 0 190 144 }
+	color_ui = rgb { 0 220 174 }
+}
+ABK = {
+	color = rgb { 11 154 11 }
+	color_ui = rgb { 41 184 41 }
+}
+KBK = {
+	color = rgb { 215 31 6 }
+	color_ui = rgb { 245 61 12 }
+}
+NOA = {
+	color = rgb { 205 130 15 }
+	color_ui = rgb { 235 160 45 }
+}
+VGE = {
+	color = rgb { 93 93 93 }
+	color_ui = rgb { 123 123 123 }
+}
+BSK = {
+	color = rgb { 31 164 11 }
+	color_ui = rgb { 61 194 41 }
+}
+BUK = {
+	color = rgb { 154 113 62 }
+	color_ui = rgb { 184 143 92 }
+}
+KHI = {
+	color = rgb { 21 154 135 }
+	color_ui = rgb { 51 184 165 }
+}
+UDM = {
+	color = rgb { 54 54 54 }
+	color_ui = rgb { 84 84 84 }
+}
+MEL = {
+	color = rgb { 205 170 170 }
+	color_ui = rgb { 235 200 200 }
+}
+CHU = {
+	color = rgb { 141 88 24 }
+	color_ui = rgb { 171 118 54 }
+}
+KHA = {
+	color = rgb { 41 154 41 }
+	color_ui = rgb { 71 184 71 }
+}
+
+### [Eastern Europe]
+POL = {
+	color = rgb { 184 72 109 }
+	color_ui = rgb { 214 102 139 }
+}
+HUN = {
+	color = rgb { 90 120 66 }
+	color_ui = rgb { 120 150 96 }
+}
+ROM = {
+	color = rgb { 175 176 22 }
+	color_ui = rgb { 205 206 52 }
+}
+MOL = {
+	color = rgb { 205 164 164 }
+	color_ui = rgb { 235 194 194 }
+}
+SLO = {
+	color = rgb { 128 131 158 }
+	color_ui = rgb { 158 161 188 }
+}
+BUL = {
+	color = rgb { 21 115 0 }
+	color_ui = rgb { 51 145 0 }
+}
+GRE = {
+	color = rgb { 43 131 177 }
+	color_ui = rgb { 73 161 207 }
+}
+CZE = {	
+	color = rgb { 24 127 121 }
+	color_ui = rgb { 54 157 141 }
+}
+ALB = {
+	#Purple Version
+	#color = rgb { 119 15 72 }
+	#color_ui = rgb { 149 45 102 }
+	#Red Version
+	color = rgb { 106 23 21 }
+	color_ui = rgb { 136 53 51 }
+}
+LIT = {
+	color = rgb { 169 169 69 }
+	color_ui = rgb { 199 199 99 }
+}
+EST = {
+	color = rgb { 20 105 145 }
+	color_ui = rgb { 50 135 175 }
+}
+LAT = {
+	#Blue Version
+	#color = rgb { 45 47 156 }
+	#color_ui = rgb { 75 77 186 }
+	#Brown Version
+	color = rgb { 111 57 58 }
+	color_ui = rgb { 141 87 88 }
+}
+UBD = {
+	color = rgb { 62 62 108 }
+	color_ui = rgb { 92 92 138 }
+}
+
+### [Middle East]
+TUR = {
+	color = rgb { 162 45 21 }
+	color_ui = rgb { 192 75 51 }
+}
+IRQ = {
+	color = rgb { 118 84 49 }
+	color_ui = rgb { 148 114 79 }
+}
+PER = {
+	color = rgb { 41 83 67 }
+	color_ui = rgb { 71 113 97 }
+}
+AFG = {
+	color = rgb { 34 130 137 }
+	color_ui = rgb { 64 160 167 }
+}
+YEM = {
+	color = rgb { 115 66 72 }
+	color_ui = rgb { 145 96 102 }
+}
+OMA = {
+	#Brown Version
+	#color = rgb { 95 51 57 }
+	#color_ui = rgb { 125 81 87 }
+	#Blue Version
+	color = rgb { 59 95 114 }
+	color_ui = rgb { 89 125 144 }
+}
+SAU = {
+	#Yellow Version
+	#color = rgb { 141 150 122 }
+	#color_ui = rgb { 171 190 152 }
+	#Green Version
+	color = rgb { 39 95 79 }
+	color_ui = rgb { 69 125 109 }
+}
+PAL = {
+	color = rgb { 140  110  65 }
+	color_ui = rgb { 170  140  95 }
+}
+LEB = {
+	color = rgb { 70  110  45 }
+	color_ui = rgb { 100  140  75 }
+}
+JOR = {
+	color = rgb { 91  65  58 }
+	color_ui = rgb { 121  95  88 }
+}
+SYR = {
+	color = rgb { 70  80  120 }
+	color_ui = rgb { 100  110  150 }
+}
+ISR = {
+	color = rgb { 92 100 151 }
+	color_ui = rgb { 122 130 181 }
+}
+UAE = {
+	color = rgb { 102 82 15 }
+	color_ui = rgb { 132 112 45 }
+}
+QAT = {
+	color = rgb { 98 20 0 }
+	color_ui = rgb { 128 50 0 }
+}
+KUW = {
+	color = rgb { 113 66 5 }
+	color_ui = rgb { 143 96 10 }
+}
+ASY = {
+	color = rgb { 98 0 56 }
+	color_ui = rgb { 128 0 86 }	
+}
+BHR = {
+	color = rgb { 130 0 0 }
+	color_ui = rgb { 150 0 0 }	
+}
+FSA = {
+	color = rgb { 0 129 20 }
+	color_ui = rgb { 0 159 50 }	
+}
+IMO = {
+	color = rgb { 192 192 192 }
+	color_ui = rgb { 222 222 222 }	
+}
+KUR = {
+	color = rgb { 174 109 20 }
+	color_ui = rgb { 204 139 50 }	
+}
+
+### [Horn of Arfrica]
+ETH = {
+	color = rgb { 122 100 161 }
+	color_ui = rgb { 152 130 191 }
+}
+GBA = {
+	color = rgb { 0 113 21 }
+	color_ui = rgb { 0 143 51 }
+}
+HAR = {
+	color = rgb { 162 147 61 }
+	color_ui = rgb { 192 177 91 }
+}
+ORO = {
+	color = rgb { 165 43 33 }
+	color_ui = rgb { 195 73 63 }
+}
+SID = {
+	color = rgb { 52 52 185 }
+	color_ui = rgb { 82 82 215 }
+}
+TIG = {
+	color = rgb { 51 102 0 }
+	color_ui = rgb { 81 132 0 }
+}
+QEM = {
+	color = rgb { 21 72 123 }
+	color_ui = rgb { 51 102 153 }
+}
+SOM = {
+	color = rgb { 31 92 55 }
+	color_ui = rgb { 61 122 85 }
+}
+ERI = {
+	color = rgb { 113 21 0 }
+	color_ui = rgb { 143 51 0 }
+}
+DJI = {
+	color = rgb { 25 92 123 }
+	color_ui = rgb { 55 122 153 }
+}
+BEG = {
+	color = rgb { 205 172 88 }
+	color_ui = rgb { 235 202 118 }
+}
+
+### [Arabic Africa]
+EGY = {
+	color = rgb { 160 160 60 }
+	color_ui = rgb { 190 190 90 }
+}
+LBA = {
+	color = rgb { 151 134 73 }
+	color_ui = rgb { 181 164 103 }
+}
+TUN = {
+	color = rgb { 113 113 62 }
+	color_ui = rgb { 143 143 92 }
+}
+ALG = {
+	color = rgb { 113 62 21 }
+	color_ui = rgb { 143 92 51 }
+}
+MOR = {
+	color = rgb { 72 21 0 }
+	color_ui = rgb { 102 51 0 }
+}
+WES = {
+	color = rgb { 215 138 62 }
+	color_ui = rgb { 245 168 92 }
+}
+
+### [Africa]
+AFA = {
+	color = rgb { 123 0 21 }
+	color_ui = rgb { 153 0 51 }
+}
+LIB = {
+	#Purple Version
+	#color = rgb { 122 100 161 }
+	#color_ui = rgb { 152 130 191 }
+	#Blue Version
+	color = rgb { 44 72 165 }
+	color_ui = rgb { 74 102 195 }
+}
+ANG = {
+	color = rgb { 22 110 41 }
+	color_ui = rgb { 52 140 71 }
+}
+COG = {
+	color = rgb { 102 119 169 }
+	color_ui = rgb { 132 149 199 }
+}
+MZB = {
+	color = rgb { 92 42 70 }
+	color_ui = rgb { 122 72 100 }
+}
+KEN = {
+	color = rgb { 105 53 14 }
+	color_ui = rgb { 135 83 14 }
+}
+ZIM = {
+	color = rgb { 3 3 139 }
+	color_ui = rgb { 6 6 169 }
+}
+BOT = {
+	color = rgb { 5 92 72 }
+	color_ui = rgb { 10 122 102 }
+}
+SUD = {
+	color = rgb { 174 62 31 }
+	color_ui = rgb { 184 92 61 }
+}
+UGA = {
+	color = rgb { 195 55 55 }
+	color_ui = rgb { 225 85 85 }
+}
+TZN = {
+	color = rgb { 192 164 93 }
+	color_ui = rgb { 222 194 123 }
+}
+RWA = {
+	color = rgb { 215 215 62 }
+	color_ui = rgb { 245 245 92 }
+}
+BRD = {
+	color = rgb { 164 113 0 }
+	color_ui = rgb { 194 143 0 }
+}
+ZAM = {
+	color = rgb { 62 62 215 }
+	color_ui = rgb { 92 92 245 }
+}
+MLW = {
+	color = rgb { 113 164 0 }
+	color_ui = rgb { 143 194 0 }
+}
+NMB = {
+	color = rgb { 189 164 215 }
+	color_ui = rgb { 219 194 245 }
+}
+MAD = {
+	color = rgb { 215 215 113 }
+	color_ui = rgb { 245 245 143 }
+}
+RCG = {
+	color = rgb { 62 164 215 }
+	color_ui = rgb { 92 194 245 }
+}
+GAB = {
+	color = rgb { 11 164 164 }
+	color_ui = rgb { 41 194 194 }
+}
+EQG = {
+	color = rgb { 215 164 0 }
+	color_ui = rgb { 245 194 0 }
+}
+CAR = {
+	color = rgb { 113 5 10 }
+	color_ui = rgb { 143 10 40 }
+}
+CHA = {
+	color = rgb { 164 215 164 }
+	color_ui = rgb { 194 245 194 }
+}
+CMR = {
+	color = rgb { 215 11 0 }
+	color_ui = rgb { 245 41 0 }
+}
+NGR = {
+	color = rgb { 215 113 62 }
+	color_ui = rgb { 245 143 92 }
+}
+NGA = {
+	color = rgb { 215 164 62 }
+	color_ui = rgb { 245 194 92 }
+}
+DAH = {
+	color = rgb { 0 11 164 }
+	color_ui = rgb { 0 41 194 }
+}
+TOG = {
+	color = rgb { 0 62 0 }
+	color_ui = rgb { 0 92 0 }
+}
+GHA = {
+	color = rgb { 62 62 11 }
+	color_ui = rgb { 92 92 41 }
+}
+VOL = {
+	color = rgb { 113 113 215 }
+	color_ui = rgb { 143 143 245 }
+}
+IVO = {
+	color = rgb { 215 215 164 }
+	color_ui = rgb { 245 245 194 }
+}
+GNA = {
+	color = rgb { 62 113 215 }
+	color_ui = rgb { 92 143 245 }
+}
+MLI = {
+	color = rgb { 164 164 205 }
+	color_ui = rgb { 194 194 235 }
+}
+SIE = {
+	color = rgb { 154 52 205 }
+	color_ui = rgb { 184 82 235 }
+}
+MRT = {
+	color = rgb { 205 103 103 }
+	color_ui = rgb { 235 133 133 }
+}
+SEN = {
+	color = rgb { 164 11 0 }
+	color_ui = rgb { 194 41 0 }
+}
+GAM = {
+	color = rgb { 113 20 20 }
+	color_ui = rgb { 143 50 50 }
+}
+GNB = {
+	color = rgb { 113 62 15 }
+	color_ui = rgb { 143 92 45 }
+}
+KAT = {
+	color = rgb { 128 26 0 }
+	color_ui = rgb { 158 56 0 }
+}
+BIA = {
+	color = rgb { 0 77 26 }
+	color_ui = rgb { 0 107 56 }
+}
+CBV = {
+	color = rgb { 0 51 102 }
+	color_ui = rgb { 0 81 132 }
+}
+BAR = {
+	color = rgb { 170 40 40 }
+	color_ui = rgb { 200 70 70 }
+}
+SOK = {
+	color = rgb { 0 77 26 }
+	color_ui = rgb { 0 107 56 }
+}
+
+### [South East Asia]
+SIA = {
+	color = rgb { 141 160 122 }
+	color_ui = rgb { 171 190 152 }
+}
+PHI = {
+	color = rgb { 112 90 141 }
+	color_ui = rgb { 142 120 171 }
+}
+TIB = {
+	color = rgb { 50 85 15 }
+	color_ui = rgb { 80 115 45 }
+}
+BHU = {
+	#Brown Version
+	#color = rgb { 132 82 48 }
+	#color_ui = rgb { 162 112 78 }
+	#Orange Version
+	color = rgb { 172 93 17 }
+	color_ui = rgb { 202 123 47 }
+}
+NEP = {
+	color = rgb { 112 90 151 }
+	color_ui = rgb { 142 120 181 }
+}
+BRM = {
+	color = rgb { 164 164 20 }
+	color_ui = rgb { 194 194 50 }
+}
+INS = {
+	color = rgb { 45 55 90 }
+	color_ui = rgb { 75 85 120 }
+}
+LAO = {
+	color = rgb { 136 72 106 }
+	color_ui = rgb { 166 102 136 }
+}
+VIN = {
+	color = rgb { 190 183 20 }
+	color_ui = rgb { 220 213 50 }
+}
+CAM = {
+	color = rgb { 70 41 110 }
+	color_ui = rgb { 100 71 140 }
+}
+SRL = {
+	color = rgb { 162 35 72 }
+	color_ui = rgb { 192 65 102 }
+}
+MLD = {
+	color = rgb { 78 165 82 }
+	color_ui = rgb { 108 195 112 }
+}
+PNG = {
+	color = rgb { 113 0 36 }
+	color_ui = rgb { 143 0 66 }
+}
+
+### [India]
+PAK = {
+	color = rgb { 20 77 52 }
+	color_ui = rgb { 50 107 81 }
+}
+BAN = {
+	color = rgb { 46 113 0 }
+	color_ui = rgb { 76 143 0 }
+}	
+DIP = {
+	color = rgb { 95 11 19 }
+	color_ui = rgb { 125 41 49 }
+}
+PSH = {
+	color = rgb { 11 108 11 }
+	color_ui = rgb { 31 138 31 }
+}
+KLT = {
+	color = rgb { 0 141 20 }
+	color_ui = rgb { 0 171 50 }	
+}
+BLC = {
+	color = rgb { 47 103 0 }
+	color_ui = rgb { 77 133 0 }	
+}
+CIP = {
+	color = rgb { 21 111 37 }
+	color_ui = rgb { 51 141 67 }
+}
+HYD = {
+	color = rgb { 180 150 0 }
+	color_ui = rgb { 210 180 0 }
+}
+KAS = {
+	color = rgb { 155 20 20 }
+	color_ui = rgb { 185 50 50 }
+}
+KHL = {
+	color = rgb { 113 85 0 }
+	color_ui = rgb { 143 115 0 }
+}
+SKK = {
+	color = rgb { 155 145 0 }
+	color_ui = rgb { 185 175 0 }
+}
+KOL = {
+	color = rgb { 22 8 96 }
+	color_ui = rgb { 52 38 126 }
+}
+RAS = {
+	color = rgb { 114 0 10 }
+	color_ui = rgb { 144 0 30 }
+}
+MPU = {
+	color = rgb { 112 95 101 }
+	color_ui = rgb { 142 125 131 }
+}
+MYS = {
+	color = rgb { 113 11 11 }
+	color_ui = rgb { 143 41 41 }
+}
+NWF = {
+	color = rgb { 12 162 162 }
+	color_ui = rgb { 42 192 192 }
+}
+RJP = { 
+	color = rgb { 80 0 0 }
+	color_ui = rgb { 110 0 0 }
+}
+SIN = {
+	color = rgb { 13 0 34 }
+	color_ui = rgb { 43 0 64 }
+}
+WIS = {
+	color = rgb { 12 162 162 }
+	color_ui = rgb { 42 192 192 }
+}
+
+### [Pacific]
+HAW = {
+	color = rgb { 191 141 6 }
+	color_ui = rgb { 221 171 12 }
+}
+TAH = {
+	color = rgb { 33 6 208 }
+	color_ui = rgb { 63 12 238 }
+}
+SAM = {
+	color = rgb { 165 5 55 }
+	color_ui = rgb { 195 10 85 }
+}
+FIJ = {
+	color = rgb { 0 164 164 }
+	color_ui = rgb { 0 194 194 }
+}
+FSM = {
+	color = rgb { 78 139 182 }
+	color_ui = rgb { 108 169 212 }
+}
+GUM = {
+	color = rgb { 20 200 60 }
+	color_ui = rgb { 50 230 90 }
+}
+SOL = {
+	color = rgb { 5 5 50 }
+	color_ui = rgb { 10 10 80 }
+}
+
+### [China]
+CHI = {
+	color = rgb { 232  203  62 }
+	color_ui = rgb { 255 233 92 }
+}
+SIK = {
+	#BLue Version
+	#color = rgb { 41 130 122 }
+	#color_ui = rgb { 71 160 152 }
+	#Yellow Version
+	color = rgb { 164 150 24 }
+	color_ui = rgb { 194 180 54 }
+}
+PRC = {
+	color = rgb { 185 2 15 }
+	color_ui = rgb { 215 4 45 }
+}
+GXC = {
+	color = rgb { 41 83 67 }
+	color_ui = rgb { 71 113 97 }
+}
+SHX = {
+	color = rgb { 52 2 7 }
+	color_ui = rgb { 82 2 15 }
+}
+XSM = {
+	color = rgb { 60 52 107 }
+	color_ui = rgb { 90 82 137 }
+}
+YUN = {
+	color = rgb { 84 118 50 }
+	color_ui = rgb { 114 148 80 }
+}
+MON = {
+	color = rgb { 68 100 12 }
+	color_ui = rgb { 98 130 42 }
+}
+TAN = {
+	#Purple Version
+	#color = rgb { 122 100 161 }
+	#color_ui = rgb { 152 130 191 }
+	#Red Version
+	color = rgb { 144 70 75 }
+	color_ui = rgb { 174 100 105 }
+}
+
+### [South America]
+BRA = {
+	color = rgb { 26 105 13 }
+	color_ui = rgb { 56 135 43 }
+}
+ARG = {
+	color = rgb { 82 129 173 }
+	color_ui = rgb { 112 159 203 }
+}
+BOL = {
+	color = rgb { 185 100 56 }
+	color_ui = rgb { 215 130 86 }
+}
+CHL = {
+	color = rgb { 108 80 89 }
+	color_ui = rgb { 138 110 119 }
+}
+COL = {
+	color = rgb { 192 157 61 }
+	color_ui = rgb { 222 187 91 }
+}
+ECU = {
+	#Orange Version
+	#color = rgb { 219 116 68 }
+	#color_ui = rgb { 249 146 98 }
+	#Blue Version
+	color = rgb { 52 80 132 }
+	color_ui = rgb { 82 110 162 }
+}
+PRU = {
+	#Purple Version
+	#color = rgb { 146 139 154 }
+	#color_ui = rgb { 176 169 184 }
+	#Red Version
+	color = rgb { 157 27 44 }
+	color_ui = rgb { 187 57 74 }
+}
+URG = {
+	#Yellow Version
+	#color = rgb { 141 160 122 }
+	#color_ui = rgb { 171 190 152 }
+	#Blue Version
+	color = rgb { 69 84 131 }
+	color_ui = rgb { 99 114 161 }
+}
+VEN = {
+	color = rgb { 131 150 112 }
+	color_ui = rgb { 161 180 142 }
+}
+PAR = {
+	color = rgb { 7 83 178 }
+	color_ui = rgb { 37 113 208 }
+}
+GYA = {
+	color = rgb { 215 164 113 }
+	color_ui = rgb { 245 194 143 }
+}
+SUR = {
+	color = rgb { 185 138 62 }
+	color_ui = rgb { 215 168 92 }
+}
+CAY = {
+	color = rgb { 21 123 215 }
+	color_ui = rgb { 51 153 245 }
+}
+TRI = {
+	color = rgb { 66 66 66 }
+	color_ui = rgb { 96 96 96 }
+}
+WLA = {
+	color = rgb { 98 0 9 }
+	color_ui = rgb { 128 0 18 }
+}
+
+### [North America]
+USA = {
+	color = rgb { 19 76 163 }
+	color_ui = rgb { 49 106 193 }
+}
+RUE = {
+	color = rgb { 58 113 62 }
+	color_ui = rgb { 58 113 62 }
+}
+MAR = {
+	color = rgb { 158 75 75 }
+	color_ui = rgb { 158 75 75 }
+}
+DCO = {
+	color = rgb { 137 40 51 }
+	color_ui = rgb { 137 40 51 }
+}
+CSA = {
+	color = rgb { 137 139 147 }
+	color_ui = rgb { 137 139 147 }
+}
+MEX = {
+	color = rgb { 74 122 53 }
+	color_ui = rgb { 104 152 83 }
+}
+COS = {
+	color = rgb { 122 98 13 }
+	color_ui = rgb { 152 128 43 }
+}
+ELS = {
+	color = rgb { 122 100 161 }
+	color_ui = rgb { 152 130 191 }
+}
+GUA = {
+	color = rgb { 42 19 82 }
+	color_ui = rgb { 72 49 112 }
+}
+HON = {
+	color = rgb { 98 115 35 }
+	color_ui = rgb { 128 145 65 }
+}
+NIC = {
+	color = rgb { 116 149 161 }
+	color_ui = rgb { 146 179 191 }
+}
+PAN = {
+	color = rgb { 122 100 161 }
+	color_ui = rgb { 152 130 191 }
+}
+CUB = {
+	color = rgb { 110 35 136 }
+	color_ui = rgb { 140 65 166 }
+}
+DOM = {
+	color = rgb { 122 100 161 }
+	color_ui = rgb { 152 130 191 }
+}
+HAI = {
+	color = rgb { 144 83 83 }
+	color_ui = rgb { 174 113 113 }
+}
+BLZ = {
+	color = rgb { 0 142 142 }
+	color_ui = rgb { 0 172 172 }
+}
+CRC = {
+	color = rgb { 215 72 72 }
+	color_ui = rgb { 245 102 102 }
+}
+BAS = {
+	color = rgb { 205 62 62 }
+	color_ui = rgb { 235 92 92 }
+}
+GDL = {
+	color = rgb { 113 215 215 }
+	color_ui = rgb { 143 245 245 }
+}
+PUE = {
+	color = rgb { 113 113 215 }
+	color_ui = rgb { 143 143 245 }
+}
+JAM = {
+	color = rgb { 62 62 11 }
+	color_ui = rgb { 92 92 41 }
+}
+BAH = {
+	color = rgb { 164 215 164 }
+	color_ui = rgb { 194 245 194 }
+}
+YUC = {
+	color = rgb { 205 3 3 }
+	color_ui = rgb { 235 6 6 }
+}
+RIG = {
+	color = rgb { 0 0 88 }
+	color_ui = rgb { 0 0 118 }
+}
+QUE = {
+	color = rgb { 0 62 175 }
+	color_ui = rgb { 0 92 205 }
+}
+ANF = {
+	color = rgb { 38 72 84 }
+	color_ui = rgb { 38 72 84 }
+}
+ILM = {
+	color = rgb { 83 45 48 }
+	color_ui = rgb { 83 45 48 }
+}
+OCS = {
+	color = rgb { 77 58 43 }
+	color_ui = rgb { 77 58 43 }
+}
+
+### [Native America]
+RAP = {
+	color = rgb { 164 0 0 }
+	color_ui = rgb { 194 0 0 }
+}
+GAR = {
+	color = rgb { 88 88 205 }
+	color_ui = rgb { 118 118 235 }
+}
+INC = {
+	color = rgb { 195 164 0 }
+	color_ui = rgb { 225 194 0 }
+}
+MIS = {
+	color = rgb { 175 11 0 }
+	color_ui = rgb { 205 41 0 }
+}
+MAY = {
+	color = rgb { 215 40 40 }
+	color_ui = rgb { 245 70 70 }
+}
+INU = {
+	color = rgb { 11 164 164 }
+	color_ui = rgb { 41 194 194 }
+}
+CHR = {
+	color = rgb { 164 82 0 }
+	color_ui = rgb { 194 112 0 }
+}
+ITZ = {
+	color = rgb { 154 154 0 }
+	color_ui = rgb { 184 184 0 }
+}
+NAH = {
+	color = rgb { 16 103 62 }
+	color_ui = rgb { 46 133 92 }
+}
+IAS = {
+	color = rgb { 0 113 11 }
+	color_ui = rgb { 0 143 41 }
+}
+ISA = {
+	color = rgb { 113 113 62 }
+	color_ui = rgb { 113 113 62 }
+}
+SCA = {
+	color = rgb { 128 77 46 }
+	color_ui = rgb { 128 77 46 }
+}
+DES = {
+	color = rgb { 140 150 198 }
+	color_ui = rgb { 105 113 149 }
+}
+NLA = {
+	color = rgb { 145 102 88 }
+	color_ui = rgb { 145 102 88 }
+}
+PAW = {
+	color = rgb { 94 74 45 }
+	color_ui = rgb { 94 74 45 }
+}
+CAD = {
+	color = rgb { 120 60 46 }
+	color_ui = rgb { 120 60 46 }
+}
+CHW = {
+	color = rgb { 74 86 61 }
+	color_ui = rgb { 74 86 61 }
+}
+
+### [Dynamic Tags]
+D01 = {
+	color = rgb { 82 139 67 }
+	color_ui = rgb { 112 169 97 }
+}
+D02 = {
+	color = rgb { 154 110 46 }
+	color_ui = rgb { 184 140 76 }
+}
+D03 = {
+	color = rgb { 165 60 5 }
+	color_ui = rgb { 195 90 10 }
+}
+D04 = {
+	color = rgb { 40 100 149 }
+	color_ui = rgb { 70 130 179 }
+}
+D05 = {
+	color = rgb { 62 62 157 }
+	color_ui = rgb { 92 92 187 }
+}
+D06 = {
+	color = rgb { 114 39 86 }
+	color_ui = rgb { 144 69 116 }
+}
+D07 = {
+	color = rgb { 155 119 95 }
+	color_ui = rgb { 185 149 125 }
+}
+D08 = {
+	color = rgb { 150 76 24 }
+	color_ui = rgb { 180 106 54 }
+}
+D09 = {
+	color = rgb { 105 147 86 }
+	color_ui = rgb { 135 177 116 }
+}
+D10 = {
+	color = rgb { 135 132 78 }
+	color_ui = rgb { 175 162 108 }
+}
+D11 = {
+	color = rgb { 94 105 122 }
+	color_ui = rgb { 124 135 152 }
+}
+D12 = {
+	color = rgb { 147 39 46 }
+	color_ui = rgb { 177 69 76 }
+}
+D13 = {
+	color = rgb { 39 117 168 }
+	color_ui = rgb { 69 147 198 }
+}
+D14 = {
+	color = rgb { 112 39 160 }
+	color_ui = rgb { 142 79 200 }
+}
+D15 = {
+	color = rgb { 82 129 57 }
+	color_ui = rgb { 112 159 87 }
+}
+D16 = {
+	color = rgb { 154 110 56 }
+	color_ui = rgb { 184 140 86 }
+}
+D17 = {
+	color = rgb { 165 70 10 }
+	color_ui = rgb { 195 100 20 }
+}
+D18 = {
+	color = rgb { 50 110 139 }
+	color_ui = rgb { 80 140 169 }
+}
+D19 = {
+	color = rgb { 62 52 157 }
+	color_ui = rgb { 92 82 187 }
+}
+D20 = {
+	color = rgb { 114 39 86 }
+	color_ui = rgb { 144 69 116 }
+}
+D21 = {
+	color = rgb { 135 109 115 }
+	color_ui = rgb { 165 139 145 }
+}
+D22 = {
+	color = rgb { 170 66 25 }
+	color_ui = rgb { 200 96 55 }
+}
+D23 = {
+	color = rgb { 65 107 56 }
+	color_ui = rgb { 95 137 86 }
+}
+D24 = {
+	color = rgb { 135 122 78 }
+	color_ui = rgb { 165 152 108 }
+}
+D25 = {
+	color = rgb { 84 110 122 }
+	color_ui = rgb { 124 140 152 }
+}
+D26 = {
+	color = rgb { 157 49 56 }
+	color_ui = rgb { 187 79 86 }
+}
+D27 = {
+	color = rgb { 39 127 168 }
+	color_ui = rgb { 69 157 198 }
+}
+D28 = {
+	color = rgb { 112 49 150 }
+	color_ui = rgb { 142 79 180 }
+}
+D29 = {
+	color = rgb { 92 139 67 }
+	color_ui = rgb { 122 169 97 }
+}
+D30 = {
+	color = rgb { 154 110 56 }
+	color_ui = rgb { 184 140 86 }
+}
+D31 = {
+	color = rgb { 160 70 5 }
+	color_ui = rgb { 190 100 10 }
+}
+D32 = {
+	color = rgb { 50 120 146 }
+	color_ui = rgb { 80 150 176 }
+}
+D33 = {
+	color = rgb { 62 62 157 }
+	color_ui = rgb { 92 92 187 }
+}
+D34 = {
+	color = rgb { 124 39 86 }
+	color_ui = rgb { 154 69 116 }
+}
+D35 = {
+	color = rgb { 135 119 125 }
+	color_ui = rgb { 165 149 155 }
+}
+D36 = {
+	color = rgb { 180 76 17 }
+	color_ui = rgb { 210 106 47 }
+}
+D37 = {
+	color = rgb { 75 117 56 }
+	color_ui = rgb { 105 147 86 }
+}
+D38 = {
+	color = rgb { 135 122 78 }
+	color_ui = rgb { 165 152 108 }
+}
+D39 = {
+	color = rgb { 94 110 132 }
+	color_ui = rgb { 124 140 162 }
+}
+D40 = {
+	color = rgb { 157 49 56 }
+	color_ui = rgb { 187 79 86 }
+}
+D41 = {
+	color = rgb { 39 107 168 }
+	color_ui = rgb { 69 137 198 }
+}
+D42 = {
+	color = rgb { 102 49 140 }
+	color_ui = rgb { 132 79 170 }
+}
+D43 = {
+	color = rgb { 92 119 67 }
+	color_ui = rgb { 122 149 97 }
+}
+D44 = {
+	color = rgb { 144 110 56 }
+	color_ui = rgb { 174 140 86 }
+}
+D45 = {
+	color = rgb { 110 70 10 }
+	color_ui = rgb { 140 100 40 }
+}
+D46 = {
+	color = rgb { 50 145 109 }
+	color_ui = rgb { 80 175 139 }
+}
+D47 = {
+	color = rgb { 62 32 167 }
+	color_ui = rgb { 92 62 197 }
+}
+D48 = {
+	color = rgb { 114 39 86 }
+	color_ui = rgb { 144 69 116 }
+}
+D49 = {
+	color = rgb { 145 119 125 }
+	color_ui = rgb { 175 149 155 }
+}
+D50 = {
+	color = rgb { 100 87 17 }
+	color_ui = rgb { 130 117 47 }
+}

@@ -1,0 +1,165 @@
+
+# Just kept for reference smh
+neo_mesopotamia_category = {
+	
+	neo_mesopotamia_decision = { 
+
+		icon = generic_form_nation
+
+		allowed = {
+			OR = {
+				original_tag = KUR #Kurdistan
+			}
+			
+		}
+
+		visible = {
+			#OR = {
+			#	original_tag = KUR
+			#}
+			
+			
+			NOT = { has_global_flag = neo_mesopotamia_formed_flag }
+			
+		}
+
+		on_map_mode = decision_view_only
+
+		ai_will_do = {
+			base = 2000
+		}
+
+		available = { #wtf is this spaghetti code
+			413 = {
+				is_fully_controlled_by = ROOT
+			}
+			421 = {
+				is_fully_controlled_by = ROOT
+			}
+			1001 = {
+				is_fully_controlled_by = ROOT
+			}
+			676 = {
+				is_fully_controlled_by = ROOT
+			}
+			291 = {
+				is_fully_controlled_by = ROOT
+			}
+			1011 = {
+				is_fully_controlled_by = ROOT
+			}
+			656 = {
+				is_fully_controlled_by = ROOT
+			}
+			675 = {
+				is_fully_controlled_by = ROOT
+			}
+			1010 = {
+				is_fully_controlled_by = ROOT
+			}
+			680 = {
+				is_fully_controlled_by = ROOT
+			}
+			677 = {
+				is_fully_controlled_by = ROOT
+			}
+			799 = {
+				is_fully_controlled_by = ROOT
+			}
+			350 = {
+				is_fully_controlled_by = ROOT
+			}
+			344 = {
+				is_fully_controlled_by = ROOT
+			}
+			183 = {
+				is_fully_controlled_by = ROOT
+			}
+			554 = {
+				is_fully_controlled_by = ROOT
+			}
+			553 = {
+				is_fully_controlled_by = ROOT
+			}
+			454 = {
+				is_fully_controlled_by = ROOT
+			}
+			453 = {
+				is_fully_controlled_by = ROOT
+			}
+			446 = {
+				is_fully_controlled_by = ROOT
+			}
+			907 = {
+				is_fully_controlled_by = ROOT
+			}
+			447 = {
+				is_fully_controlled_by = ROOT
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 413
+				state = 421
+				state = 1001
+				state = 676
+				state = 291
+				state = 1011
+				state = 656
+				state = 675
+				state = 1010
+				state = 680
+				state = 677
+				state = 799
+				state = 350
+				state = 344
+				state = 183
+				state = 554
+				state = 553
+				state = 454
+				state = 453
+				state = 446
+				state = 907
+				state = 447
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				drop_cosmetic_tag = yes
+			}
+
+			set_cosmetic_tag = neo_mesopotamia
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_state_core = 413
+			add_state_core = 421
+			add_state_core = 1001
+			add_state_core = 676
+			add_state_core = 291
+			add_state_core = 1011
+			add_state_core = 656
+			add_state_core = 675
+			add_state_core = 1010
+			add_state_core = 680
+			add_state_core = 677
+			add_state_core = 799
+			add_state_core = 350
+			add_state_core = 344
+			add_state_core = 183
+			add_state_core = 554
+			add_state_core = 553
+			add_state_core = 454
+			add_state_core = 453
+			add_state_core = 446
+			add_state_core = 907
+			add_state_core = 447
+
+			hidden_effect = {
+				set_global_flag = neo_mesopotamia_formed_flag
+			}
+		}
+	}
+}

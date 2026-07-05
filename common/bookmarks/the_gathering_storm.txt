@@ -1,0 +1,152 @@
+bookmarks = {
+	bookmark = {
+		name = "IMPERIUM_ORIENTIS_NAME"
+		desc = "IMPERIUM_ORIENTIS_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "TUR"
+		default = yes
+		
+		"FRA"={
+			history = "FRA_IMPERIUM_ORIENTIS_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"JAP"={
+			history = "JAP_IMPERIUM_ORIENTIS_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"ENG"={
+			history = "ENG_IMPERIUM_ORIENTIS_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+
+
+		GER = {
+			history = "GER_IMPERIUM_ORIENTIS_DESC"
+			ideology = fascism
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"ITA"={
+			history = "ITA_IMPERIUM_ORIENTIS_DESC"
+			ideology = fascism
+			ideas = {
+				
+			}	
+			focuses = {
+				
+			}		
+		}
+		"TUR"={
+			history = "TUR_IMPERIUM_ORIENTIS_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"SOV"={
+			history = "SOV_IMPERIUM_ORIENTIS_DESC"
+			ideology = communism
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}	
+		}
+		"AUS"={
+			history = "AUS_IMPERIUM_ORIENTIS_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}	
+		}
+		"CAN"={
+			minor = yes
+			history = "CAN_IMPERIUM_ORIENTIS_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"CHI"={
+			minor = yes
+			history = "CHI_IMPERIUM_ORIENTIS_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}				
+		"POL"={
+			minor = yes
+			history = "POL_IMPERIUM_ORIENTIS_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		SWE = {
+			minor = yes
+			history = SWE_IMPERIUM_ORIENTIS_DESC
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		BRA = {
+			minor = yes
+			history = BRA_IMPERIUM_ORIENTIS_DESC
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

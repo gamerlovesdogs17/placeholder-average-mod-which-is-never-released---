@@ -1,0 +1,36 @@
+NDefines_Graphics.NGraphics.GRADIENT_BORDERS_COUNTRY_CENTER_THICKNESS = 1.5
+NDefines_Graphics.NGraphics.GRADIENT_BORDERS_THICKNESS_DIPLOMACY = 2.0
+NDefines_Graphics.NGraphics.BORDER_WIDTH = 1.5
+NDefines_Graphics.NGraphics.GRADIENT_BORDERS_FIELD_COUNTRY_LOW = 0.0 
+NDefines_Graphics.NGraphics.GRADIENT_BORDERS_FIELD_COUNTRY_HIGH = 9000.0 
+NDefines_Graphics.NGraphics.GRADIENT_BORDERS_THICKNESS_COUNTRY_LOW = 0.0 
+NDefines_Graphics.NGraphics.GRADIENT_BORDERS_THICKNESS_COUNTRY_HIGH = 25.0
+NDefines_Graphics.NGraphics.GRADIENT_BORDERS_THICKNESS_STATE = 1.0
+NDefines_Graphics.NGraphics.GRADIENT_BORDERS_OUTLINE_CUTOFF_COUNTRY = 0.98
+NDefines_Graphics.NGraphics.GRADIENT_BORDERS_OUTLINE_CUTOFF_DIPLOMACY = 0.98
+
+--[[
+NDefines_Graphics.NGraphics.GRADIENT_BORDERS_COUNTRY_CENTER_THICKNESS = 0
+NDefines_Graphics.NGraphics.GRADIENT_BORDERS_THICKNESS_DIPLOMACY = 1
+NDefines_Graphics.NGraphics.BORDER_WIDTH = 1.0
+NDefines_Graphics.NGraphics.GRADIENT_BORDERS_FIELD_COUNTRY_LOW = 0.0 -- country area in sum of pixels ...
+NDefines_Graphics.NGraphics.GRADIENT_BORDERS_FIELD_COUNTRY_HIGH = 9000.0 -- ... the value is squared, so fe. country of size 100x100pix = 10000
+NDefines_Graphics.NGraphics.GRADIENT_BORDERS_THICKNESS_COUNTRY_LOW = 0.0 -- thickness in pixels
+NDefines_Graphics.NGraphics.GRADIENT_BORDERS_THICKNESS_COUNTRY_HIGH = 35.0
+NDefines_Graphics.NGraphics.GRADIENT_BORDERS_THICKNESS_STATE = 1.0
+NDefines_Graphics.NGraphics.GRADIENT_BORDERS_OUTLINE_CUTOFF_COUNTRY = 0.98
+NDefines_Graphics.NGraphics.GRADIENT_BORDERS_OUTLINE_CUTOFF_DIPLOMACY = 0.98
+
+-- Vanilla HOI4
+
+GRADIENT_BORDERS_COUNTRY_CENTER_THICKNESS = 2.0, -- The center gradient is linear 1/255 per pixel for this many pixels
+GRADIENT_BORDERS_THICKNESS_DIPLOMACY = 12.0,
+BORDER_WIDTH = 1.5,
+GRADIENT_BORDERS_FIELD_COUNTRY_LOW = 300.0, -- country area in sum of pixels ...
+GRADIENT_BORDERS_FIELD_COUNTRY_HIGH = 9000.0, -- ... the value is squared, so fe. country of size 100x100pix = 10000
+GRADIENT_BORDERS_THICKNESS_COUNTRY_LOW = 5.0, -- thickness in pixels
+GRADIENT_BORDERS_THICKNESS_COUNTRY_HIGH = 25.0,
+GRADIENT_BORDERS_THICKNESS_STATE = 5.0,
+GRADIENT_BORDERS_OUTLINE_CUTOFF_COUNTRY = 0.973, -- Magic number to balance cutoff on edges without neighbor
+GRADIENT_BORDERS_OUTLINE_CUTOFF_DIPLOMACY = 0.973,
+]]

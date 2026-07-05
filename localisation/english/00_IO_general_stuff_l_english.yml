@@ -1,0 +1,41 @@
+﻿l_english:
+ MAPMODE_ALIGNMENT_MAP_MODE:0 "Alignment"
+ MAPMODE_ALIGNMENT_MAP_MODE_DESC:0 "Alignment"
+ MAPMODE_ALIGNMENT_MAP_MODE_NAME:0 "Alignment"
+ alignment_map_mode_tooltip:0 "[FROM.controller.GetCountryAlignment]"
+ alignment_map_mode_tooltip_delayed:0 "[FROM.controller.GetCountryAlignmentExpand]"
+ 
+ CENTRALPOWERSALIGNED:0 "Europa Pakt"
+ CENTRALPOWERSALIGNED_long:0 "Europa Pakt Aligned"
+ 
+ ALLIEDPOWERSALIGNED:0 "Entente"
+ ALLIEDPOWERSALIGNED_long:0 "Entente Aligned"
+ 
+ JAPANPOWERSALIGNED:0 "Greater East Asian Co-Prosperity Sphere"
+ JAPANPOWERSALIGNED_long:0 "Greater East Asian Co-Prosperity Sphere Aligned"
+ 
+ COMMIEPOWERSALIGNED:0 "Comintern"
+ COMMIEPOWERSALIGNED_long:0 "Comintern Aligned"
+ 
+ QINGCHINAALIGNED:0 "Qing China"
+ QINGCHINAALIGNED_long:0 "Qing China Aligned"
+ 
+ 
+
+ # Advisors #
+ head_of_government:0 "Head of Government"
+ foreign_minister:0 "Foreign Minister"
+ economy_minister:0 "Economy Minister"
+ security_minister:0 "Minister of Interior"
+ education_minister:0 "Minister of Education"
+ head_of_intel:0 "National Security Minister"
+ head_of_gov_available:0 "§RHeads of government can't be manually added or removed.§!"
+ minister_available:0 "§RMinisters can't be manually added or removed.§!"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,1723 @@
+﻿###########################
+# Election Events
+###########################
+
+add_namespace = election
+
+# Test Election Event
+country_event = {
+	id = election.1
+	title = election.1.t
+	desc = election.1.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = election.1.a
+	}
+}
+
+# Fascist Majority
+country_event = {
+	id = election.11
+	title = election.11.t
+	desc = election.11.d
+	picture = GFX_report_event_fascist_gathering
+	
+	is_triggered_only = yes
+
+	trigger = {
+		has_democracy_government = yes
+		fascism > 0.5
+		is_puppet = no
+	}
+	
+	option = {	
+		name = election.11.a
+		ai_chance = {
+			base = 75			
+		}
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+	}
+
+	option = {
+		name = election.11.b
+		ai_chance = {
+			base = 35
+		}
+		start_civil_war = {
+			ideology = fascism
+			size = 0.5
+		}
+	}
+}
+
+# Communist Majority
+country_event = {
+	id = election.12
+	title = election.12.t
+	desc = election.12.d
+	picture = GFX_report_event_gathering_protest
+	
+	is_triggered_only = yes
+
+	trigger = {
+
+		has_democracy_government = yes
+		communism > 0.5
+	}
+	
+	option = {
+		name = election.12.a
+		ai_chance = {
+			base = 75
+		}
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+	}
+
+	option = {
+		name = election.12.b
+		ai_chance = {
+			base = 35			
+		}
+		start_civil_war = {
+			ideology = communism
+			size = 0.5
+		}
+	}
+}
+###########################
+# Political Events
+###########################
+
+add_namespace = political
+
+# Communism on the Rise
+country_event = {
+	id = political.1
+	title = political.1.t
+	desc = political.1.d
+	picture = GFX_report_event_worker_protests
+
+	trigger = {
+		NOT = { has_radical_left_government = yes }
+		communism > 0.6
+		NOT = { communism > 0.7 }
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	# Seek government support
+#	option = {
+#		name = political.1.a
+#		trigger = {
+#			OR = {
+#				NOT = { tag = CHI }
+#				AND = {
+#					NOT = { country_exists = PRC }
+#					tag = CHI
+#				}			
+#			}
+#		}
+#		custom_effect_tooltip = political.1.a.tt
+#		clr_country_flag = communism_popular_movement
+#		set_country_flag = communism_political_movement
+#	}
+
+	# Seek popular support
+#	option = {
+#		name = political.1.b
+#		custom_effect_tooltip = political.1.b.tt
+#		clr_country_flag = communism_political_movement
+#		clr_country_flag = communism_government_support
+#		set_country_flag = communism_popular_movement
+#	}
+
+	# We need a referendum
+	option = {
+		name = political.14.c
+		add_political_power = -100
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+	}
+
+	# Not right now
+	option = {
+		name = political.14.e
+		ai_chance = {
+			factor = 0
+		}
+		custom_effect_tooltip = impending_civil_war_tt
+	}
+}
+
+# Fascism on the Rise
+country_event = {
+	id = political.7
+	title = political.7.t
+	desc = political.7.d
+	picture = GFX_report_event_fascist_gathering
+
+	trigger = {
+		NOT = { has_reactionary_government = yes }
+		fascism > 0.6
+		NOT = { fascism > 0.7 }
+		#check_has_focus_tree_to_switch_to_fascism = yes
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	# Seek government support
+#	option = {
+#		name = political.7.a
+#		custom_effect_tooltip = political.7.a.tt
+#		clr_country_flag = fascism_popular_movement
+#		set_country_flag = fascism_political_movement
+#	}
+
+	# Seek popular support
+#	option = {
+#		name = political.7.b
+#		custom_effect_tooltip = political.7.b.tt
+#		clr_country_flag = fascism_political_movement
+#		clr_country_flag = fascism_government_support
+#		set_country_flag = fascism_popular_movement
+#	}
+
+	# We need a referendum
+	option = {
+		name = political.14.c
+		add_political_power = -100
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+	}
+
+	# Not right now
+	option = {
+		name = political.14.e
+		ai_chance = {
+			factor = 0
+		}
+		custom_effect_tooltip = impending_civil_war_tt
+	}
+}
+
+
+# [Ruling Party] Debates Democracy
+country_event = {
+	id = political.14
+	title = political.14.t
+	desc = political.14.d
+	picture = GFX_report_event_journalists_speech
+	
+	trigger = {
+		NOT = { has_democracy_government = yes }
+		democratic > 0.6
+		NOT = { democratic > 0.7 }
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+
+#	option = {
+#		name = political.14.a
+#		custom_effect_tooltip = political.14.a.tt
+#		clr_country_flag = democracy_political_movement
+#		set_country_flag = democracy_government_support
+#	}
+
+	# We need a referendum
+	option = {
+		name = political.14.c
+		add_political_power = -100
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+	}
+
+	# Not right now
+	option = {
+		name = political.14.e
+		ai_chance = {
+			factor = 0
+		}
+		custom_effect_tooltip = impending_civil_war_tt
+	}
+}
+
+### > 50% support
+# political.18 Fascist
+
+country_event = {
+	id = political.18
+	title = political.18.t
+	desc = political.18.d
+	picture = GFX_report_event_fascist_gathering
+
+	is_triggered_only = yes
+
+	#trigger = {
+	#	fascism > 0.5
+	#	NOT = { has_reactionary_government = yes }
+	#	NOT = { has_idea = fascist_revolutionaries }
+	#	NOT = { has_idea = reign_of_terror }
+	#	is_puppet = no
+	#	has_civil_war = no
+	#}
+
+	#mean_time_to_happen = {
+	#	days = 30
+	#}
+
+	#option = {
+	#	name = political.18.a
+	#	add_political_power = -100
+	#	add_popularity = {
+	#		ideology = fascism
+	#		popularity = -0.10
+	#	}
+	#	add_timed_idea = {
+	#		idea = fascist_revolutionaries
+	#		days = 365
+	#	}
+	#}
+
+	#option = {
+	#	name = political.18.b
+	#	add_timed_idea = {
+	#		idea = fascist_revolutionaries
+	#		days = 365
+	#	}
+	#}
+
+	option = {
+		name = political.18.c
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+		add_stability = -0.05
+	}
+}
+
+# political.19 Communist
+
+country_event = {
+	id = political.19
+	title = political.19.t
+	desc = political.19.d
+	picture = GFX_report_event_worker_protests
+
+	is_triggered_only = yes
+
+	#trigger = {
+	#	communism > 0.5
+	#	NOT = { has_radical_left_government = yes }
+	#	NOT = { has_idea = communist_revolutionaries }
+	#	NOT = { has_idea = reign_of_terror }
+	#	is_puppet = no
+	#	has_civil_war = no
+	#}
+
+	#mean_time_to_happen = {
+	#	days = 30
+	#}
+
+	#option = {
+	#	name = political.19.a
+	#	add_political_power = -100
+	#	add_popularity = {
+	#		ideology = communism
+	#		popularity = -0.10
+	#	}
+	#	add_timed_idea = {
+	#		idea = communist_revolutionaries
+	#		days = 365
+	#	}
+	#}
+
+	#option = {
+	#	name = political.19.b
+	#	add_timed_idea = {
+	#		idea = communist_revolutionaries
+	#		days = 365
+	#	}
+	#}
+
+	option = {
+		name = political.19.c
+		trigger = {
+			#Special case CHI PRC
+			OR = {
+				NOT = { tag = CHI }
+				AND = {
+					NOT = { country_exists = PRC }
+					tag = CHI
+				}			
+			}
+		}
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+		add_stability = -0.05
+	}
+}
+
+# political.20 Democratic
+
+country_event = {
+	id = political.20
+	title = political.20.t
+	desc = political.20.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+
+	#trigger = {
+	#	democratic > 0.5
+	#	NOT = { has_democracy_government = yes }
+	#	NOT = { has_idea = democratic_revolutionaries }
+	#	NOT = { has_idea = reign_of_terror }
+	#	is_puppet = no
+	#	has_civil_war = no
+	#}
+
+	#mean_time_to_happen = {
+	#	days = 30
+	#}
+
+	#option = {
+	#	name = political.20.a
+	#	add_political_power = -100
+	#	add_popularity = {
+	#		ideology = democratic
+	#		popularity = -0.10
+	#	}
+	#	add_timed_idea = {
+	#		idea = democratic_revolutionaries
+	#		days = 365
+	#	}
+	#}
+
+	#option = {
+	#	name = political.20.b
+	#	add_timed_idea = {
+	#		idea = democratic_revolutionaries
+	#		days = 365
+	#	}
+	#}
+
+	option = {
+		name = political.20.c
+		if = {
+			limit = { has_reactionary_government = yes }
+			add_timed_idea = { idea = fascism_defeated days = 730 }
+		}
+		if = {
+			limit = { has_radical_left_government = yes }
+			add_timed_idea = { idea = communism_defeated days = 730 }
+		}
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+		add_stability = -0.05
+	}
+}
+
+
+### Revolution
+# political.21 Fascist
+country_event = {
+	id = political.21
+	title = political.21.t
+	desc = political.21.d
+	picture = GFX_report_event_fascist_militia
+
+	trigger = {
+		fascism > 0.7
+		num_of_controlled_states > 1
+		#has_idea = fascist_revolutionaries
+		NOT = { has_reactionary_government = yes }
+		has_civil_war = no
+		
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		hidden_effect = { remove_ideas = fascist_revolutionaries }
+	}
+
+	option = {
+		name = political.21.a
+		ai_chance = {
+			factor = 0
+		}
+		start_civil_war = {
+			ideology = fascism
+			size = 0.5
+		}
+	}
+
+	option = {
+		name = political.21.b
+		ai_chance = {
+			factor = 0
+		}
+		if = {
+			limit = {
+				has_democracy_government = yes
+			}
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = democratic
+				size = 0.5
+				keep_political_leader = yes
+			}
+		}
+		if = {
+			limit = {
+				has_radical_left_government = yes
+			}
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = communism
+				size = 0.5
+				keep_political_leader = yes
+			}
+		}
+		if = {
+			limit = {
+				has_government = neutrality
+			}
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = neutrality
+				size = 0.5
+				keep_political_leader = yes
+			}
+		}
+	}
+
+	# We need a referendum
+	option = {
+		name = political.14.c
+		trigger = {
+			is_ai = yes
+		}
+		add_political_power = -100
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+	}
+}
+# political.22 Communist
+country_event = {
+	id = political.22
+	title = political.22.t
+	desc = political.22.d
+	picture = GFX_report_event_worker_protests
+
+	trigger = {
+		communism > 0.7
+		num_of_controlled_states > 1
+		#has_idea = communist_revolutionaries
+		NOT = { has_radical_left_government = yes }
+		has_civil_war = no
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		hidden_effect = { remove_ideas = communist_revolutionaries }
+	}
+
+	option = {
+		name = political.22.a
+		ai_chance = {
+			factor = 0
+		}
+		start_civil_war = {
+			ideology = communism
+			size = 0.5
+		}
+	}
+
+	option = {
+		name = political.22.b
+		ai_chance = {
+			factor = 0
+		}
+		if = {
+			limit = {
+				has_democracy_government = yes
+			}
+			start_civil_war = {
+				ruling_party = communism
+				ideology = democratic
+				size = 0.5
+				keep_political_leader = yes
+			}
+		}
+		if = {
+			limit = {
+				has_reactionary_government = yes
+			}
+			start_civil_war = {
+				ruling_party = communism
+				ideology = fascism
+				size = 0.5
+				keep_political_leader = yes
+			}
+		}
+		if = {
+			limit = {
+				has_government = neutrality
+			}
+			start_civil_war = {
+				ruling_party = communism
+				ideology = neutrality
+				size = 0.5
+				keep_political_leader = yes
+			}
+		}
+	}
+
+	# We need a referendum
+	option = {
+		name = political.14.c
+		trigger = {
+			is_ai = yes
+		}
+		add_political_power = -100
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+	}
+}
+# political.23 Democratic
+country_event = {
+	id = political.23
+	title = political.23.t
+	desc = political.23.d
+	picture = GFX_report_event_gathering_protest
+
+	trigger = {
+		democratic > 0.7
+		num_of_controlled_states > 1
+		#has_idea = democratic_revolutionaries
+		NOT = { has_democracy_government = yes }
+		has_civil_war = no
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		hidden_effect = { remove_ideas = democratic_revolutionaries }
+	}
+
+	option = {
+		name = political.23.a
+		ai_chance = {
+			factor = 0
+		}
+		start_civil_war = {
+			ideology = democratic
+			size = 0.5
+		}
+	}
+
+	option = {
+		name = political.23.b
+		ai_chance = {
+			factor = 0
+		}
+		if = {
+			limit = {
+				has_government = neutrality
+			}
+			start_civil_war = {
+				ruling_party = democratic
+				ideology = neutrality
+				size = 0.5
+				keep_political_leader = yes
+			}
+		}
+		if = {
+			limit = {
+				has_reactionary_government = yes
+			}
+			add_timed_idea = { idea = fascism_defeated days = 730 }			
+			start_civil_war = {
+				ruling_party = democratic
+				ideology = fascism
+				size = 0.5
+				keep_political_leader = yes
+			}
+		}
+		if = {
+			limit = {
+				has_radical_left_government = yes
+			}
+			add_timed_idea = { idea = communism_defeated days = 730 }
+			start_civil_war = {
+				ruling_party = democratic
+				ideology = communism
+				size = 0.5
+				keep_political_leader = yes
+			}
+		}
+	}
+
+	# We need a referendum
+	option = {
+		name = political.14.c
+		trigger = {
+			is_ai = yes
+		}
+		add_political_power = -100
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+	}
+}
+
+### Suppressed
+# political.24 Fascist
+country_event = {
+	id = political.24
+	title = political.24.t
+	desc = political.24.d
+	picture = GFX_report_event_fascists_posing
+
+	trigger = {
+		fascism < 0.3
+		has_idea = fascist_revolutionaries
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = political.24.a
+		remove_ideas = fascist_revolutionaries
+	}
+}
+# political.25 Communist
+country_event = {
+	id = political.25
+	title = political.25.t
+	desc = political.25.d
+	picture = GFX_report_event_stalin_propaganda
+
+	trigger = {
+		communism < 0.3
+		has_idea = communist_revolutionaries
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = political.25.a
+		remove_ideas = communist_revolutionaries
+	}
+}
+# political.26 Democratic
+country_event = {
+	id = political.26
+	title = political.26.t
+	desc = political.26.d
+	picture = GFX_report_event_europe_funeral
+
+	trigger = {
+		democratic < 0.3
+		has_idea = democratic_revolutionaries
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = political.26.a
+		remove_ideas = democratic_revolutionaries
+	}
+}
+
+# Remove neutral foreign policy if fascist or commie
+country_event = {
+	id = political.27
+	title = political.27.t
+	desc = { 
+		text = political.27.d_fascism
+	 	trigger = { has_reactionary_government = yes }
+	}
+	desc = { 
+		text = political.27.d_communism
+	 	trigger = { has_radical_left_government = yes }
+	}
+	picture = GFX_report_event_journalists_speech
+
+	trigger = {
+		OR = {
+			has_reactionary_government = yes
+			has_radical_left_government = yes
+		}
+		has_idea = neutrality_idea
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = political.27.a
+		remove_ideas = neutrality_idea
+	}
+}
+
+# Country has same ideology as revolter
+country_event = {
+	id = political.28
+	title = political.28.t
+	desc = political.28.d
+
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+
+	
+
+	option = {
+		name = political.28.a
+		random_other_country = {
+			limit = {
+				original_tag = ROOT
+				NOT = { tag = ROOT }
+			}
+			ROOT = { annex_country = { target = PREV transfer_troops = yes } }
+		}
+	}
+}
+
+# After Peace Conference, suggest unification
+country_event = {
+	id = political.31
+	title = political.31.t
+	desc = political.31.desc
+
+	picture = GFX_report_event_journalists_speech
+	is_triggered_only = yes 
+	trigger = {
+		is_subject = no
+		NOT = { has_country_flag = yes_to_unification_flag }
+		NOT = { has_country_flag = no_to_unification_flag }
+		any_country_with_original_tag = {
+			original_tag_to_check = ROOT
+			NOT = { tag = ROOT }
+			is_subject = no
+			has_government = ROOT
+			has_war = no
+		}
+	}
+	
+	immediate = {
+		# LOG = "[ROOT.GetLeader]'s [ROOT.GetName] got event" #TODO_TA Remove logging
+		IF = {
+			limit = {
+				has_global_flag = global_unification_request_sent_flag
+			}
+			clr_global_flag = global_unification_request_sent_flag
+		}
+	}
+
+	option = {
+		name = political.31.a
+		set_country_flag = yes_to_unification_flag
+		clr_country_flag = unification_request_sent_flag 
+	}
+	option = {
+		name = political.31.b
+		ai_chance = {
+			base = 0
+		}
+		set_country_flag = no_to_unification_flag 
+		clr_country_flag = unification_request_sent_flag
+	}
+}
+
+# Unification event
+country_event = {
+	id = political.32
+	title = political.32.t
+	desc = political.32.desc
+
+	picture = GFX_report_event_journalists_speech
+
+	trigger = {
+		is_subject = no
+		has_country_flag = yes_to_unification_flag
+		any_other_country = {
+			NOT = { tag = ROOT }
+			original_tag = ROOT
+			has_country_flag = yes_to_unification_flag
+			is_subject = no
+			has_government = ROOT
+			has_war = no
+		}
+		NOT = {
+			any_other_country = {
+				original_tag = ROOT
+				has_government = ROOT
+				has_country_flag = unification_request_sent_flag
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+		# LOG = "[ROOT.GetLeader]'s [ROOT.GetName] to unify countries" #TODO_TA Remove logging
+
+	}
+
+	option = {
+		name = political.32.a
+		trigger = {
+			ROOT = { is_ai = no }
+		}
+		clr_country_flag = yes_to_unification_flag 
+		clr_country_flag = unification_request_sent_flag
+		#log = "Player ROOT [ROOT.GetName] to annex"
+		every_other_country = {
+			limit = {
+				original_tag = ROOT
+				has_country_flag = yes_to_unification_flag
+				is_subject = no
+				has_government = ROOT
+				has_war = no
+			}
+			clr_country_flag = yes_to_unification_flag
+			ROOT = { annex_country = { target = PREV transfer_troops = yes } }
+		}
+		news_event = {
+			id = news.350
+			hours = 8 
+			random_hours = 8 
+		}
+	}
+	option = {
+		name = political.32.b #Only for AI. No need to localize
+		trigger = {
+			ROOT = { is_ai = yes }
+		}
+		IF = {
+			limit = {
+				any_other_country = {
+					NOT = { tag = ROOT }
+					original_tag = ROOT
+					has_country_flag = yes_to_unification_flag
+					is_subject = no
+					has_government = ROOT
+					has_war = no
+					is_ai = no 
+				}
+			}
+			log = "ai ROOT - Human player [ROOT.GetName] to annex"
+			random_other_country = {
+				limit = { 
+					NOT = { tag = ROOT }
+					original_tag = ROOT
+					has_country_flag = yes_to_unification_flag
+					is_subject = no
+					has_government = ROOT
+					has_war = no
+					is_ai = no 
+				}
+				clr_country_flag = yes_to_unification_flag 
+				clr_country_flag = unification_request_sent_flag
+				every_other_country = {
+					limit = { 
+						original_tag = ROOT
+						has_country_flag = yes_to_unification_flag
+						is_subject = no
+						has_government = ROOT
+						has_war = no
+					}
+					clr_country_flag = yes_to_unification_flag
+					PREV = { annex_country = { target = PREV transfer_troops = yes } }
+				}
+				news_event = {
+					id = news.350
+					hours = 8 
+					random_hours = 8 
+				}
+			}
+		}
+		ELSE = {
+			#log = "AI ROOT [ROOT.GetName] to annex"
+			clr_country_flag = yes_to_unification_flag 
+			clr_country_flag = unification_request_sent_flag
+			every_other_country = {
+				limit = {
+					original_tag = ROOT
+					has_country_flag = yes_to_unification_flag
+					is_subject = no
+					has_government = ROOT
+					has_war = no
+				}
+				clr_country_flag = yes_to_unification_flag
+				ROOT = { annex_country = { target = PREV transfer_troops = yes } }
+			}
+			news_event = {
+				id = news.350
+				hours = 8 
+				random_hours = 8 
+			}
+		}
+	}
+}
+	
+country_event = {
+	id = political.33
+	title = political.33.t
+	desc = political.33.desc
+
+	picture = GFX_report_event_journalists_speech
+
+	trigger = {
+	}
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	}
+
+	option = {
+		name = political.33.a
+		add_war_support = 0.1
+	}
+}
+add_namespace = decisions
+
+# Recruit general for civil war event
+country_event = {
+	id = decisions.1
+	title = decisions.1.t
+	desc = decisions.1.desc
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					any_army_leader = {
+						average_stats < 2
+						is_field_marshal = no
+						NOT = { has_unit_leader_flag = hidden_sympathies }
+						NOT = { has_trait = hidden_sympathies }
+					}
+				}
+				random_army_leader = {
+					limit = {
+						average_stats < 2
+						is_field_marshal = no
+						NOT = { has_unit_leader_flag = hidden_sympathies }
+						NOT = { has_trait = hidden_sympathies }
+					}
+					set_unit_leader_flag = hidden_sympathies
+				}	
+			}
+			if = {
+				limit = {
+					any_army_leader = {
+						NOT = { average_stats < 2 }
+						average_stats < 3
+						is_field_marshal = no
+						NOT = { has_unit_leader_flag = hidden_sympathies }
+						NOT = { has_trait = hidden_sympathies }
+					}
+				}
+				random_army_leader = {
+					limit = {
+						NOT = { average_stats < 2 }
+						average_stats < 3
+						is_field_marshal = no
+						NOT = { has_unit_leader_flag = hidden_sympathies }
+						NOT = { has_trait = hidden_sympathies }
+					}
+					set_unit_leader_flag = hidden_sympathies
+				}	
+			}
+			if = {
+				limit = {
+					any_army_leader = {
+						NOT = { average_stats < 3 }
+						average_stats < 4
+						is_field_marshal = no
+						NOT = { has_unit_leader_flag = hidden_sympathies }
+						NOT = { has_trait = hidden_sympathies }
+					}
+				}
+				random_army_leader = {
+					limit = {
+						NOT = { average_stats < 3 }
+						average_stats < 4
+						is_field_marshal = no
+						NOT = { has_unit_leader_flag = hidden_sympathies }
+						NOT = { has_trait = hidden_sympathies }
+					}
+					set_unit_leader_flag = hidden_sympathies
+				}	
+			}
+			if = {
+				limit = {
+					any_army_leader = {
+						NOT = { average_stats < 4 }
+						NOT = { has_unit_leader_flag = hidden_sympathies }
+						is_field_marshal = no
+						NOT = { has_unit_leader_flag = hidden_sympathies }
+						NOT = { has_trait = hidden_sympathies }
+					}
+				}
+				random_army_leader = {
+					limit = {
+						NOT = { average_stats < 4 }
+						is_field_marshal = no
+						NOT = { has_unit_leader_flag = hidden_sympathies }
+						NOT = { has_trait = hidden_sympathies }
+					}
+					set_unit_leader_flag = hidden_sympathies
+				}	
+			}
+		}
+	}
+	
+	# Recruit weak leader
+	option = {
+		name = decisions.1.a
+		trigger = {
+			any_army_leader = {
+				is_field_marshal = no
+				average_stats < 2
+				has_unit_leader_flag = hidden_sympathies
+			}
+		}
+		add_command_power = -1
+		random_army_leader = {
+			limit = {
+				is_field_marshal = no
+				average_stats < 2
+				has_unit_leader_flag = hidden_sympathies
+			}
+			add_unit_leader_trait = hidden_sympathies
+		}
+		hidden_effect = {
+			every_army_leader = {
+				limit = {
+					has_unit_leader_flag = hidden_sympathies
+				}
+				clr_unit_leader_flag = hidden_sympathies
+			}
+		}
+	}
+
+	# Recruit below mediocre leader
+	option = {
+		name = decisions.1.b
+		trigger = {
+			any_army_leader = {
+				is_field_marshal = no
+				NOT = { average_stats < 2 }
+				average_stats < 3
+				has_unit_leader_flag = hidden_sympathies
+			}
+		}
+		add_command_power = -2
+		add_political_power = -10
+		random_army_leader = {
+			limit = {
+				is_field_marshal = no
+				NOT = { average_stats < 2 }
+				average_stats < 3
+				has_unit_leader_flag = hidden_sympathies
+			}
+			add_unit_leader_trait = hidden_sympathies
+		}
+		hidden_effect = {
+			every_army_leader = {
+				limit = {
+					has_unit_leader_flag = hidden_sympathies
+				}
+				clr_unit_leader_flag = hidden_sympathies
+			}
+		}
+	}
+
+	# Recruit above mediocre leader
+	option = {
+		name = decisions.1.c
+		trigger = {
+			any_army_leader = {
+				is_field_marshal = no
+				NOT = { average_stats < 3 }
+				average_stats < 4
+				has_unit_leader_flag = hidden_sympathies
+			}
+		}
+		add_command_power = -3
+		add_political_power = -20
+		random_army_leader = {
+			limit = {
+				is_field_marshal = no
+				NOT = { average_stats < 3 }
+				average_stats < 4
+				has_unit_leader_flag = hidden_sympathies
+			}
+			add_unit_leader_trait = hidden_sympathies
+		}
+		hidden_effect = {
+			every_army_leader = {
+				limit = {
+					has_unit_leader_flag = hidden_sympathies
+				}
+				clr_unit_leader_flag = hidden_sympathies
+			}
+		}
+	}
+
+	# Recruit great leader
+	option = {
+		name = decisions.1.d
+		trigger = {
+			any_army_leader = {
+				is_field_marshal = no
+				NOT = { average_stats < 4 }
+				has_unit_leader_flag = hidden_sympathies
+			}
+		}
+		add_command_power = -4
+		add_political_power = -30
+		random_army_leader = {
+			limit = {
+				is_field_marshal = no
+				NOT = { average_stats < 4 }
+				has_unit_leader_flag = hidden_sympathies
+			}
+			add_unit_leader_trait = hidden_sympathies
+		}
+		hidden_effect = {
+			every_army_leader = {
+				limit = {
+					has_unit_leader_flag = hidden_sympathies
+				}
+				clr_unit_leader_flag = hidden_sympathies
+			}
+		}
+	}
+}
+
+# Recruit field marshal for civil war event
+country_event = {
+	id = decisions.2
+	title = decisions.2.t
+	desc = decisions.2.desc
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					any_army_leader = {
+						average_stats < 2
+						is_field_marshal = yes
+						NOT = { has_unit_leader_flag = hidden_sympathies_marshal }
+						NOT = { has_trait = hidden_sympathies }
+					}
+				}
+				random_army_leader = {
+					limit = {
+						average_stats < 2
+						is_field_marshal = yes
+						NOT = { has_unit_leader_flag = hidden_sympathies_marshal }
+						NOT = { has_trait = hidden_sympathies }
+					}
+					set_unit_leader_flag = hidden_sympathies_marshal
+				}	
+			}
+			if = {
+				limit = {
+					any_army_leader = {
+						NOT = { average_stats < 2 }
+						average_stats < 3
+						is_field_marshal = yes
+						NOT = { has_unit_leader_flag = hidden_sympathies_marshal }
+						NOT = { has_trait = hidden_sympathies }
+					}
+				}
+				random_army_leader = {
+					limit = {
+						NOT = { average_stats < 2 }
+						average_stats < 3
+						is_field_marshal = yes
+						NOT = { has_unit_leader_flag = hidden_sympathies_marshal }
+						NOT = { has_trait = hidden_sympathies }
+					}
+					set_unit_leader_flag = hidden_sympathies_marshal
+				}	
+			}
+			if = {
+				limit = {
+					any_army_leader = {
+						NOT = { average_stats < 3 }
+						average_stats < 4
+						is_field_marshal = yes
+						NOT = { has_unit_leader_flag = hidden_sympathies_marshal }
+						NOT = { has_trait = hidden_sympathies }
+					}
+				}
+				random_army_leader = {
+					limit = {
+						NOT = { average_stats < 3 }
+						average_stats < 4
+						is_field_marshal = yes
+						NOT = { has_unit_leader_flag = hidden_sympathies_marshal }
+						NOT = { has_trait = hidden_sympathies }
+					}
+					set_unit_leader_flag = hidden_sympathies_marshal
+				}	
+			}
+			if = {
+				limit = {
+					any_army_leader = {
+						NOT = { average_stats < 4 }
+						is_field_marshal = yes
+						NOT = { has_unit_leader_flag = hidden_sympathies_marshal }
+						NOT = { has_trait = hidden_sympathies }
+					}
+				}
+				random_army_leader = {
+					limit = {
+						NOT = { average_stats < 4 }
+						is_field_marshal = yes
+						NOT = { has_unit_leader_flag = hidden_sympathies_marshal }
+						NOT = { has_trait = hidden_sympathies }
+					}
+					set_unit_leader_flag = hidden_sympathies_marshal
+				}	
+			}
+		}
+	}
+	
+	# Recruit weak leader
+	option = {
+		name = decisions.1.a
+		trigger = {
+			any_army_leader = {
+				is_field_marshal = yes
+				average_stats < 2
+				has_unit_leader_flag = hidden_sympathies_marshal
+			}
+		}
+		add_command_power = -1
+		random_army_leader = {
+			limit = {
+				is_field_marshal = yes
+				average_stats < 2
+				has_unit_leader_flag = hidden_sympathies_marshal
+			}
+			add_unit_leader_trait = hidden_sympathies
+		}
+		hidden_effect = {
+			every_army_leader = {
+				limit = {
+					has_unit_leader_flag = hidden_sympathies_marshal
+				}
+				clr_unit_leader_flag = hidden_sympathies_marshal
+			}
+		}
+	}
+
+	# Recruit below mediocre leader
+	option = {
+		name = decisions.1.b
+		trigger = {
+			any_army_leader = {
+				is_field_marshal = yes
+				NOT = { average_stats < 2 }
+				average_stats < 3
+				has_unit_leader_flag = hidden_sympathies_marshal
+			}
+		}
+		add_command_power = -2
+		add_political_power = -10
+		random_army_leader = {
+			limit = {
+				is_field_marshal = yes
+				NOT = { average_stats < 2 }
+				average_stats < 3
+				has_unit_leader_flag = hidden_sympathies_marshal
+			}
+			add_unit_leader_trait = hidden_sympathies
+		}
+		hidden_effect = {
+			every_army_leader = {
+				limit = {
+					has_unit_leader_flag = hidden_sympathies_marshal
+				}
+				clr_unit_leader_flag = hidden_sympathies_marshal
+			}
+		}
+	}
+
+	# Recruit above mediocre leader
+	option = {
+		name = decisions.1.c
+		trigger = {
+			any_army_leader = {
+				is_field_marshal = yes
+				NOT = { average_stats < 3 }
+				average_stats < 4
+				has_unit_leader_flag = hidden_sympathies_marshal
+			}
+		}
+		add_command_power = -3
+		add_political_power = -20
+		random_army_leader = {
+			limit = {
+				is_field_marshal = yes
+				NOT = { average_stats < 3 }
+				average_stats < 4
+				has_unit_leader_flag = hidden_sympathies_marshal
+			}
+			add_unit_leader_trait = hidden_sympathies
+		}
+		hidden_effect = {
+			every_army_leader = {
+				limit = {
+					has_unit_leader_flag = hidden_sympathies_marshal
+				}
+				clr_unit_leader_flag = hidden_sympathies_marshal
+			}
+		}
+	}
+
+	# Recruit great leader
+	option = {
+		name = decisions.1.d
+		trigger = {
+			any_army_leader = {
+				is_field_marshal = yes
+				NOT = { average_stats < 4 }
+				has_unit_leader_flag = hidden_sympathies_marshal
+			}
+		}
+		add_command_power = -4
+		add_political_power = -30
+		random_army_leader = {
+			limit = {
+				is_field_marshal = yes
+				NOT = { average_stats < 4 }
+				has_unit_leader_flag = hidden_sympathies_marshal
+			}
+			add_unit_leader_trait = hidden_sympathies
+		}
+		hidden_effect = {
+			every_army_leader = {
+				limit = {
+					has_unit_leader_flag = hidden_sympathies_marshal
+				}
+				clr_unit_leader_flag = hidden_sympathies_marshal
+			}
+		}
+	}
+}
+
+
+#Purchase old ships generic decision events (Moved from BBA file)
+add_namespace = generic_purchase_ships_events
+# FROM wants to purcahse old ships
+country_event = {
+	id = generic_purchase_ships_events.01
+	title = generic_purchase_ships_events.01.t
+	desc = generic_purchase_ships_events.01.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_merchant_ship_01
+	# Yes
+	option = {
+		name = generic_purchase_ships_events.01.a
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 50
+				is_in_faction_with = FROM
+			}
+			modifier = {
+				add = 50
+				has_same_ideology = yes
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value > 10
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+					target = FROM
+					value > 40
+				}
+			}
+			modifier = {
+				add = 30
+				has_opinion = {
+					target = FROM
+					value > 80
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = { 
+					has_war_with = FROM
+					has_civil_war = yes
+					has_capitulated = yes
+					has_opinion = {
+						target = FROM
+						value < 0
+					}
+				}
+			}
+		}
+		add_offsite_building = { type = industrial_complex  level = 1 }
+		FROM = {
+			country_event = {
+				id = generic_purchase_ships_events.02
+				days = 1
+			}
+		}
+	}
+	# No
+	option = {
+		name = generic_purchase_ships_events.01.b
+		ai_chance = {
+			base = 20
+		}
+		FROM = {
+			country_event = {
+				id = generic_purchase_ships_events.03
+				days = 1
+			}
+		}
+	}
+}
+
+# FROM agrees to sell ships
+country_event = {
+	id = generic_purchase_ships_events.02
+	title = generic_purchase_ships_events.02.t
+	desc = generic_purchase_ships_events.02.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_ast_navy
+	option = {
+		name = generic_purchase_ships_events.02.a
+		ai_chance = {
+			base = 5
+		}	
+		ETH_get_ships_from_country = yes
+	}
+}
+
+# FROM refuses to sell ships
+country_event = {
+	id = generic_purchase_ships_events.03
+	title = generic_purchase_ships_events.03.t
+	desc = generic_purchase_ships_events.03.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_ast_navy
+	option = {
+		name = generic_purchase_ships_events.03.a
+		ai_chance = {
+			base = 5
+		}
+		FROM = {
+			clr_country_flag = negotiating_ship_purchase_flag@ROOT
+		}
+	}
+}
+
+# FROM wants to purcahse old dreadnoughts
+country_event = {
+	id = generic_purchase_ships_events.04
+	title = generic_purchase_ships_events.04.t
+	desc = { 
+		text = generic_purchase_ships_events.04.desc.a 
+		trigger = {
+			original_tag = BRA
+			original_tag = ARG
+			original_tag = CHL
+			original_tag = URG
+			original_tag = PAR
+		}
+	}
+	desc = { 
+		text = generic_purchase_ships_events.04.desc.b
+		trigger = {
+			NOT = {
+				original_tag = BRA
+				original_tag = ARG
+				original_tag = CHL
+				original_tag = URG
+				original_tag = PAR
+			}
+		}
+	}
+	is_triggered_only = yes
+	picture = GFX_report_event_merchant_ship_04
+	# Yes
+	option = {
+		name = generic_purchase_ships_events.04.a
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 50
+				is_in_faction_with = FROM
+			}
+			modifier = {
+				add = 50
+				has_same_ideology = yes
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value > 10
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+					target = FROM
+					value > 40
+				}
+			}
+			modifier = {
+				add = 30
+				has_opinion = {
+					target = FROM
+					value > 80
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = { 
+					has_war_with = FROM
+					has_civil_war = yes
+					has_capitulated = yes
+					has_opinion = {
+						target = FROM
+						value < 0
+					}
+				}
+			}
+		}
+		add_offsite_building = { type = industrial_complex  level = 1 }
+		FROM = {
+			country_event = {
+				id = generic_purchase_ships_events.05
+				days = 1
+			}
+		}
+	}
+	# No
+	option = {
+		name = generic_purchase_ships_events.04.b
+		ai_chance = {
+			base = 20
+		}
+		FROM = {
+			country_event = {
+				id = generic_purchase_ships_events.06
+				days = 1
+			}
+		}
+	}
+}
+
+# FROM agrees to sell dreadnoughts
+country_event = {
+	id = generic_purchase_ships_events.05
+	title = generic_purchase_ships_events.05.t
+	desc = generic_purchase_ships_events.05.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_ast_navy
+	option = {
+		name = generic_purchase_ships_events.05.a
+		ai_chance = {
+			base = 5
+		}	
+		SMB_get_dreadnoughts_from_country = yes
+	}
+}
+
+# FROM refuses to sell dreadnoughts
+country_event = {
+	id = generic_purchase_ships_events.06
+	title = generic_purchase_ships_events.06.t
+	desc = generic_purchase_ships_events.06.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_ast_navy
+	option = {
+		name = generic_purchase_ships_events.06.a
+		ai_chance = {
+			base = 5
+		}
+		FROM = {
+			clr_country_flag = negotiating_dreadnought_purchase_flag@ROOT
+		}
+	}
+}
+
+	

@@ -1,0 +1,412 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			# Add Canals
+			IF = {
+				limit = {
+					has_dlc = "Gotterdammerung" 
+				}
+				58 = {
+					add_building_construction = {
+						type = canal_kiel
+						level = 1
+						instant_build = yes
+						province =  6389
+					}
+				}
+				685 = {
+					add_building_construction = {
+						type = canal_panama
+						level = 1
+						instant_build = yes
+						province =  7617
+					}
+				}
+			}
+		}
+		#Setup Colonial Powers
+		effect = {
+			if = {
+				limit = {
+					any_country = {
+						any_owned_state = {
+							NOT = { is_core_of = PREV }
+						}
+					}
+				}
+				every_country = {
+					limit = {
+						any_owned_state = {
+							NOT = { is_core_of = PREV }
+						}
+					}
+					add_to_array = { global.colonial_powers = THIS }
+				}
+			}
+		}
+	}
+
+	# Ace pilots
+	# country, FROM = ace
+	on_ace_promoted = {
+		random_events = {
+			100 = ace_promoted.1
+			5 = ace_promoted.2
+		}
+	}
+
+	# country, FROM = ace, PREV = enemy ace
+	# This event fires twice, once for each ace.
+	on_aces_killed_each_other = {
+		random_events = {
+			100 = aces_killed_each_other.1
+		}
+	}
+
+	# country, FROM = our ace,
+	# PREV = enemy ace, has killed FROM
+	on_ace_killed_by_ace = {
+		random_events = {
+			100 = ace_killed_by_ace.1
+		}
+	}
+
+	# country, FROM = our ace,
+	# PREV = enemy ace, killed by FROM
+	on_ace_killed_other_ace = {
+		random_events = {
+			100 = ace_killed_other_ace.1
+		}
+	}
+
+	# our ace is killed by no name
+	# country, FROM = ace
+	on_ace_killed = {
+		random_events = {
+			100 = ace_died.1
+		}
+	}
+
+	# our ace died in accident
+	# country, FROM = ace
+	on_ace_killed_on_accident = {
+
+	}
+
+	# enemy ace is killed by our non name
+	# country, FROM = enemy ace
+	on_non_ace_killed_other_ace = {
+
+	}
+
+	on_nuke_drop = {
+
+		effect = {
+			set_global_flag = first_nuke_dropped
+			set_variable = {
+				global.nukecountry = ROOT
+			}
+			if = {
+				limit = { NOT = { has_global_flag = first_nuke_dropped } }
+				country_event = { id = generic.8 }
+			}
+			if = {
+				limit = { has_idea = race_for_the_bomb_outclassed }
+				remove_ideas = race_for_the_bomb_outclassed
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_core_of = JAP
+					}
+					has_global_flag = JAP_nuke_1
+					NOT = {
+						has_global_flag = JAP_nuke_2
+					}
+				}
+				set_global_flag = JAP_nuke_2
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_core_of = JAP
+					}
+					NOT = {
+						has_global_flag = JAP_nuke_1
+					}
+				}
+				set_global_flag = JAP_nuke_1
+			}
+			if = {
+				limit = {
+					FROM = {
+						state = 953
+					}
+					NOT = {
+						has_global_flag = land_of_fire_flag
+					}
+				}
+				set_global_flag = land_of_fire_flag
+			}
+
+			news_event = { id = nuke_dropped.2 days = 1 }
+			news_event = { id = nuke_dropped.3 days = 1 }
+			news_event = { id = nuke_dropped.4 days = 1 }
+			news_event = { id = nuke_dropped.5 days = 1 }
+			news_event = { id = nuke_dropped.6 days = 1 }
+			news_event = { id = nuke_dropped.7 days = 1 }
+			news_event = { id = nuke_dropped.8 days = 1 }
+			news_event = { id = nuke_dropped.9 days = 1 }
+			news_event = { id = nuke_dropped.10 days = 1 }
+			news_event = { id = nuke_dropped.11 days = 1 }
+			news_event = { id = nuke_dropped.12 days = 1 }
+			news_event = { id = nuke_dropped.13 days = 1 }
+		}
+		random_events = {
+			100 = nuke_dropped.0
+		}
+	}
+
+	# country random events
+	#on_bi_yearly_pulse = {
+	#
+	#}
+
+	#on_five_year_pulse = {
+	#
+	#}
+
+	# FROM is the faction Leader, ROOT is the country leaving the faction
+	on_leave_faction = {
+		effect = {
+			FROM = {
+				add_opinion_modifier = {
+					modifier = faction_traitor
+					target = ROOT
+					days = 365
+				}
+
+				add_opinion_modifier = {
+					modifier = faction_traitor_trade
+					target = ROOT
+					days = 365
+				}
+			}
+		}
+	}
+
+
+	# When a new faction is formed
+	#on_faction_formed = {
+	#	effect = {
+	#		news_event = { id = news.159 }
+	#	}
+	#}
+
+	# ROOT is capitulated country, FROM is winner
+	
+
+	
+
+	on_coup_succeeded = {
+		effect = {
+			#Turn elections on for democracies created from coup
+			random_other_country = {
+				limit = {
+					has_democracy_government = yes
+					original_tag = ROOT
+				}
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = yes
+				}
+			}
+		}
+	}
+
+	#ROOT - country that just went to peace
+	on_peaceconference_ended = {
+		effect = {
+			#Country becomes a colonial power
+			if = {
+				limit = {
+					ROOT = {
+						any_owned_state = {
+							NOT = { is_core_of = PREV }
+						}
+						NOT = {
+							is_in_array = {
+								array = global.colonial_powers
+								value = THIS
+							}
+						}
+					}
+				}
+				ROOT = {
+					add_to_array = { global.colonial_powers = THIS }
+				}
+			}
+			#Country loses colonial possessions
+			if = {
+				limit = {
+					ROOT = {
+						is_in_array = {
+							array = global.colonial_powers
+							value = THIS
+						}
+						NOT = {
+							any_owned_state = {
+								NOT = { is_core_of = PREV }
+							}
+						}
+					}
+				}
+				ROOT = {
+					remove_from_array = { global.colonial_powers = THIS }
+				}
+			}
+		}
+	}
+
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_state_control_changed = {
+		#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+		#Modify Colonial Powers
+		effect = {
+			#Country becomes a colonial power
+			if = {
+				limit = {
+					ROOT = {
+						any_owned_state = {
+							NOT = { is_core_of = PREV }
+						}
+						NOT = {
+							is_in_array = {
+								array = global.colonial_powers
+								value = THIS
+							}
+						}
+					}
+				}
+				ROOT = {
+					add_to_array = { global.colonial_powers = THIS }
+				}
+			}
+			#Country loses colonial possessions
+			if = {
+				limit = {
+					FROM = {
+						is_in_array = {
+							array = global.colonial_powers
+							value = THIS
+						}
+						NOT = {
+							any_owned_state = {
+								NOT = { is_core_of = PREV }
+							}
+						}
+					}
+				}
+				FROM = {
+					remove_from_array = { global.colonial_powers = THIS }
+				}
+			}
+		}
+	}
+
+	# root country that invades
+	# scope state that is invaded
+	# from scope state that the invasion started
+	on_naval_invasion = {
+	 	effect = {
+		 	if = {
+				limit = {
+					ROOT = {
+						divisions_in_state = {
+							 unit = marine_commando
+							 size > 0
+							 state = PREV
+						}
+						 has_tech = marines_commandos_demolition 
+					}
+					NOT = { has_state_flag = marines_commando_effect }
+					OWNER = { NOT = { tag = ROOT } }
+				}
+				SF_marine_demoliton_effect = yes # Note that the state flag condition is not preventing it from doing 1 damage per division 
+			}
+	 	}
+	}
+
+
+	# root country that paradrops
+	# scope state that is paradroped into
+	# from scope state that the paradrop started
+	on_paradrop = {
+	    effect = {
+		    ROOT = { set_country_flag = has_paradropped_flag }
+		}
+	}
+	on_ruling_party_change = {
+		# temp var old_ideology_token is available for effects
+		effect = {
+			every_controlled_state = {
+				limit = {
+					has_resistance = yes
+				}
+				set_temp_variable = { new_compliance = compliance }
+				multiply_temp_variable = { new_compliance = 0.5 }
+				set_compliance = new_compliance
+			}
+		}
+	}
+
+	on_unit_leader_promote_from_ranks_veteran = { #Unit leader scope, FROM is unit
+		effect = {
+			FROM = {
+				add_random_valid_trait_from_unit = {
+					character = ROOT
+				}
+			}
+			set_unit_leader_flag = field_promotion_achievement
+		}
+	}
+
+	on_unit_leader_promote_from_ranks_green = { #Unit leader scope, FROM is unit
+		effect = {
+			set_unit_leader_flag = field_promotion_achievement
+		}
+	}
+	
+	# root is the state that was dropped into
+	# from is the dropping country
+	# this differs from on_paradrop in that it is run once per paradrop, not once per unit dropped
+	on_units_paradropped_in_state = {
+		effect = {
+			if = {
+				limit = { 
+					FROM = { has_tech = paras_dispersed_drop } 
+					NOT = { 
+						has_state_flag = {
+						    flag = para_drop_effect
+						    value = 0
+						}
+					}
+					CONTROLLER = { NOT = { tag = FROM } }
+				}
+				SF_PARA_sabotage_effect = yes
+			}
+			if = {
+				limit = { 
+					FROM = { has_tech = paras_combat_drop } 
+					NOT = { 
+						has_state_flag = {
+						    flag = para_drop_effect
+						    value = 0
+						}
+					}
+				}
+				SF_PARA_combat_effect = yes
+			}
+		}
+	}
+}

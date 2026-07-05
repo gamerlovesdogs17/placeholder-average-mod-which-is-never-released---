@@ -1,0 +1,93 @@
+on_actions = {
+	#DO NOT USE UNLESS YOU ABSOLUTELY NEED TO 
+	#ESPECIALLY AVOID on_daily, on_weekly, and on_monthly
+	#on_startup IS FINE
+	
+	on_startup = {
+		effect = {
+			every_possible_country = {
+				limit = {
+					OR = {
+						tag = GER
+						tag = AUS
+						tag = TUR 
+						tag = KAL 
+						tag = AZR 
+						tag = CRI 
+						#add more later
+					}
+				}
+				add_to_array = {
+					array = global.central_powers
+					value = THIS.id
+				}
+			}
+			every_possible_country = {
+				limit = {
+					OR = {
+						tag = ENG
+						tag = FRA
+						tag = CAN 
+						tag = POR
+						tag = SPR
+						tag = YUG
+						is_puppet_of = ENG
+						is_puppet_of = FRA
+						#add more later
+					}
+				}
+				add_to_array = {
+					array = global.allied_powers
+					value = THIS.id
+				}
+			}
+			every_possible_country = {
+				limit = {
+					OR = {
+						tag = CHI
+						tag = SHX
+						tag = XSM
+						tag = GXC
+						tag = YUN
+						is_puppet_of = CHI
+					}
+				}
+				add_to_array = {
+					array = global.qingchina_powers
+					value = THIS.id
+				}
+			}
+			every_possible_country = {
+				limit = {
+					OR = {
+						tag = JAP
+						tag = MAN
+						is_puppet_of = JAP
+						#add more later
+					}
+				}
+				add_to_array = {
+					array = global.japan_powers
+					value = THIS.id
+				}
+			}
+			every_possible_country = {
+				limit = {
+					OR = {
+						#tag = PRA uncomment when PRA tag is added
+						tag = SOV
+						tag = PRC
+						tag = MEX
+						is_puppet_of = SOV
+						#add more later
+					}
+				}
+				add_to_array = {
+					array = global.commie_powers
+					value = THIS.id
+				}
+			}
+		}
+	}
+	
+}

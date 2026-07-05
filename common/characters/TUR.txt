@@ -1,0 +1,95 @@
+characters={
+	TUR_osman_fuad={
+		name= "Osman Füad Osmanoğlu"
+		portraits={
+			civilian={
+				large="gfx/leaders/ISA/unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ father_of_the_turks }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	TUR_mustafa_kemal_ataturk={
+		name=TUR_mustafa_kemal_ataturk
+		portraits={
+			civilian={
+				large=GFX_portrait_TUR_mustafa_kemal_ataturk
+			}
+			army = {
+				large = GFX_portrait_TUR_mustafa_kemal_ataturk_military
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TUR_mustafa_kemal_ataturk_pm
+			cost = 150
+			can_be_fired = no
+			visible = {
+				
+			}
+			cancel_if_invalid = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					NOT = { has_country_flag = has_pm }
+				}
+			}
+			on_add = {
+				TUR = { set_country_flag = has_pm }
+			}
+			on_remove = {
+				TUR = { clr_country_flag = has_pm }
+			}
+			traits = {
+				head_of_government
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ 
+				#father_of_the_turks 
+			}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+
+	#Scientist
+	TUR_vecihi_hurkus = {
+		name = TUR_vecihi_hurkus
+		portraits = {
+			army = {
+				large = GFX_portrait_TUR_vecihi_hurkus
+				small = GFX_idea_tur_vecihi_hurkus
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_aircraft_specialist scientist_trait_resourceful }
+			skills = {
+				specialization_air = 2
+			}
+		}
+
+		#advisor={
+		#	cost = 100
+		#	slot = theorist
+		#	idea_token = TUR_vecihi_hurkus
+		#	ledger = air
+		#	allowed = {
+		#		original_tag = TUR
+		#		has_dlc = "Battle for the Bosporus"
+		#	}
+		#	
+		#	traits = {
+		#		air_warfare_theorist
+		#	}
+		#}
+	}
+
+}

@@ -1,0 +1,48 @@
+ideas = {
+
+	country = {
+		george_v = {
+			
+			allowed = {
+				original_tag = ENG
+			}
+
+			
+			removal_cost = -1
+			
+			traits = { popular_figurehead }
+			
+
+		}
+
+		ENG_king_edward = {
+			
+			allowed = {
+				original_tag = ENG
+			}
+
+			picture = king_edward
+			
+			removal_cost = -1
+			
+			traits = { popular_figurehead }
+
+		}
+
+		ENG_george_vi = {
+			
+			allowed = {
+				original_tag = ENG
+			}
+
+
+			picture = george_vi_ns
+			
+			removal_cost = -1
+			
+			traits = { popular_figurehead }
+			
+		}
+
+	}
+}

@@ -1,0 +1,8 @@
+
+
+###Advisor and leader traits go here
+
+leader_traits = {
+
+	
+}
