@@ -47,6 +47,6 @@ replace_path="localisation/replace"
 
 
 
-path="mod/IORebooted"
+path="mod/IOREBOOTED/IORebooted"
 name="Imperium Orientis: Undead"
 supported_version="1.19.*"
