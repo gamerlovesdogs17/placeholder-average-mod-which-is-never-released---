@@ -4,7 +4,7 @@ IF = {
 	limit = { 
 		has_dlc = "Trial of Allegiance"
 	}
-	set_#OOB = "CHL_TOA_1936"
+	#set_#OOB = "CHL_TOA_1936"
 }
 IF = {
 	limit = {
@@ -12,7 +12,7 @@ IF = {
 			has_dlc = "Trial of Allegiance"
 		}
 	}
-	set_#OOB = "CHL_1936"
+	#set_#OOB = "CHL_1936"
 }
 
 
@@ -350,7 +350,7 @@ set_popularities = {
 		limit = {
 			has_dlc = "Trial of Allegiance"
 		}
-		set_#OOB = "CHL_TOA_1939"
+		#set_#OOB = "CHL_TOA_1939"
 	}
 	IF = {
 		limit = {
@@ -358,7 +358,7 @@ set_popularities = {
 				has_dlc = "Trial of Allegiance"
 			}
 		}
-		set_#OOB = "CHL_1939"
+		#set_#OOB = "CHL_1939"
 	}
 	
 	IF = {

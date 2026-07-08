@@ -4,14 +4,14 @@ IF = {
 	limit = {
 		has_dlc = "Gotterdammerung"
 	}
-	set_#OOB = "HUN_wuw_1936"
+	#set_#OOB = "HUN_wuw_1936"
 	ELSE_IF = {
 		limit = {
 			NOT = {
 				has_dlc = "Gotterdammerung"
 			}
 		}
-		set_#OOB = "HUN_1936"
+		#set_#OOB = "HUN_1936"
 	}
 }
 
@@ -774,7 +774,7 @@ set_grand_doctrine = new_strategic_destruction
 			basic_light_tank = 1
 			gwtank = 1
 		}
-		set_#OOB = "HUN_1939"
+		#set_#OOB = "HUN_1939"
 	}
 
 	IF = {
@@ -803,7 +803,7 @@ set_grand_doctrine = new_strategic_destruction
 			}
 			icon = "GFX_generic_light_BAA_camo"
 		}
-		set_#OOB = "HUN_1939_nsb"
+		#set_#OOB = "HUN_1939_nsb"
 	}
 	
 }

@@ -4,9 +4,9 @@ IF = {
 	limit = {
 		has_dlc = "No Compromise, No Surrender"
 	}
-	set_#OOB = "CHI_1936_sea"
+	#set_#OOB = "CHI_1936_sea"
 	else = {
-		set_#OOB = "CHI_1936"
+		#set_#OOB = "CHI_1936"
 	}
 	if = {
 		limit = {
@@ -705,7 +705,7 @@ set_convoys = 40
 		limit = {
 			has_dlc = "No Compromise, No Surrender"
 		}
-		set_#OOB = "CHI_1939_sea"
+		#set_#OOB = "CHI_1939_sea"
 		
 		#complete_national_focus = CHI_dang_guo 							
 		#complete_national_focus = CHI_promote_the_national_currency 		
@@ -795,7 +795,7 @@ set_convoys = 40
 			free_trade
 			CHI_military_affairs_commission
 		}
-		set_#OOB = "CHI_1939"
+		#set_#OOB = "CHI_1939"
 	}
 	
 	set_global_flag = fall_of_nanjing

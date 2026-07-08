@@ -7,14 +7,14 @@ IF = {
 	set_technology = {
 		rangers_tech = 1
 	}
-	set_#OOB = "PHI_1936_ncns"
+	#set_#OOB = "PHI_1936_ncns"
 	ELSE_IF = {
 		limit = {
 			NOT = {
 				has_dlc = "No Compromise, No Surrender"
 			}
 		}
-		set_#OOB = "PHI_1936"
+		#set_#OOB = "PHI_1936"
 	}
 }
 

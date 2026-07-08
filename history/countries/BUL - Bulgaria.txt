@@ -487,7 +487,7 @@ set_grand_doctrine = new_operational_integrity
 			gwtank = 1
 			basic_light_tank = 1
 		}
-		set_#OOB = "BUL_1939"
+		#set_#OOB = "BUL_1939"
 	}
 	if = {
 		limit = {
@@ -499,7 +499,7 @@ set_grand_doctrine = new_operational_integrity
 			gwtank_chassis = 1
 			basic_light_tank_chassis = 1
 		}
-		set_#OOB = "BUL_1939_nsb"
+		#set_#OOB = "BUL_1939_nsb"
 	}
 	if = {
 		limit = { has_dlc = "By Blood Alone" }

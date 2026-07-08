@@ -493,7 +493,7 @@ IF = {
 		basic_light_tank = 1
 		improved_light_tank = 1
 	}
-	set_#OOB = "JAP_1936"
+	#set_#OOB = "JAP_1936"
 }
 IF = {
 	limit = {
@@ -504,7 +504,7 @@ IF = {
 		basic_light_tank_chassis = 1
 		improved_light_tank_chassis = 1
 	}
-	set_#OOB = "JAP_1936_nsb"
+	#set_#OOB = "JAP_1936_nsb"
 }
 
 IF = {
@@ -1125,12 +1125,12 @@ add_mastery = {
 		set_technology = {
 			basic_medium_tank_chassis = 1
 		}
-		set_#OOB = "JAP_1939_nsb"
+		#set_#OOB = "JAP_1939_nsb"
 		ELSE = {
 			set_technology = {
 				basic_medium_tank = 1
 			}
-			set_#OOB = "JAP_1939"
+			#set_#OOB = "JAP_1939"
 		}
 	}
 	IF = {

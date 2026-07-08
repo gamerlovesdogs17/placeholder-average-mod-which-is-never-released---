@@ -36,9 +36,9 @@ IF = {
 	limit = {
 		has_dlc = "No Compromise, No Surrender"
 	}
-	set_#OOB = "XSM_1936_sea"
+	#set_#OOB = "XSM_1936_sea"
 	else = {
-		set_#OOB = "XSM_1936"
+		#set_#OOB = "XSM_1936"
 	}
 }
 

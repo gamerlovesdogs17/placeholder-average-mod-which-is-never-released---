@@ -3,13 +3,13 @@ if = {
 	limit = {
 		has_dlc = "Graveyard of Empires"
 	}
-	set_#OOB = "RAJ_1936_GOE"
+	#set_#OOB = "RAJ_1936_GOE"
 }
 if = {
 	limit = {
 		NOT = { has_dlc = "Graveyard of Empires" }
 	}
-	set_#OOB = "RAJ_1936"	
+	#set_#OOB = "RAJ_1936"	
 }
 
 if = {

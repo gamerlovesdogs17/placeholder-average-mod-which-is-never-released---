@@ -4,14 +4,14 @@ IF = {
 	limit = {
 		has_dlc = "Gotterdammerung"
 	}
-	set_#OOB = "AUS_ww_1936"
+	#set_#OOB = "AUS_ww_1936"
 	ELSE_IF = {
 		limit = {
 			NOT = {
 				has_dlc = "Gotterdammerung"
 			}
 		}
-		set_#OOB = "AUS_1936"
+		#set_#OOB = "AUS_1936"
 	}
 }
 

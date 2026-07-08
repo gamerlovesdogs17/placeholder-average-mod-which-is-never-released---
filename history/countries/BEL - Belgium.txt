@@ -11,7 +11,7 @@ IF = {
 		rangers_tech = 1
 		BEL_chasseurs_ardennais_ncns = 1 
 	}
-	set_#OOB = "BEL_WW_1936_lar_ncns"	
+	#set_#OOB = "BEL_WW_1936_lar_ncns"	
 	ELSE_IF = {
 		limit = { 
 			has_dlc = "Gotterdammerung"
@@ -21,7 +21,7 @@ IF = {
 			rangers_tech = 1
 			BEL_chasseurs_ardennais_ncns = 1 
 		}
-		set_#OOB = "BEL_WW_1936_ncns"
+		#set_#OOB = "BEL_WW_1936_ncns"
 	}
 	ELSE_IF = {
 		limit = { 
@@ -32,7 +32,7 @@ IF = {
 			armored_car1 = 1
 			BEL_chasseurs_ardennais = 1 
 		}
-		set_#OOB = "BEL_WW_1936_lar"
+		#set_#OOB = "BEL_WW_1936_lar"
 	}
 	ELSE_IF = {
 		limit = {
@@ -41,7 +41,7 @@ IF = {
 				has_dlc = "La Resistance"
 			}
 		}
-		set_#OOB = "BEL_WW_1936"
+		#set_#OOB = "BEL_WW_1936"
 		set_technology = {
 			BEL_chasseurs_ardennais = 1 
 		}
@@ -52,7 +52,7 @@ IF = {
 				has_dlc = "Gotterdammerung"
 			}
 		}
-		set_#OOB = "BEL_1936"
+		#set_#OOB = "BEL_1936"
 	}
 }
 
@@ -526,7 +526,7 @@ IF = {
 		limit = { 
 			has_dlc = "Gotterdammerung"
 		}
-		set_#OOB = "BEL_WW_1939"
+		#set_#OOB = "BEL_WW_1939"
 	}
 	IF = {
 		limit = {
@@ -534,7 +534,7 @@ IF = {
 				has_dlc = "Gotterdammerung"
 			}
 		}
-		set_#OOB = "BEL_1939"
+		#set_#OOB = "BEL_1939"
 	}
 
 	if = {

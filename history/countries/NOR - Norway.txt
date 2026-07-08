@@ -228,7 +228,7 @@ if = {
 		#complete_national_focus = NOR_norges_tekniske_hogskole
 	}
 	
-	set_#OOB = "NOR_1939"
+	#set_#OOB = "NOR_1939"
 	if = {
 		limit = { has_dlc = "Man the Guns" }
 			#set_naval_#OOB = "NOR_1939_naval_mtg"
