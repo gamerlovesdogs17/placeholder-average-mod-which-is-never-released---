@@ -171,8 +171,8 @@ set_popularities = {
 	}
 
 	#recruit_character = COL_eduardo_santos
-	promote_character = COL_eduardo_santos
-	retire_character = COL_alfonso_lópez_pumarejo
+	#promote_character = COL_eduardo_santos
+	#retire_character = COL_alfonso_lópez_pumarejo
 }
 
 

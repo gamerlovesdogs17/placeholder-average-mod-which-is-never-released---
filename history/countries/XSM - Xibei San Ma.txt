@@ -4,33 +4,11 @@ set_variable = { XSM_the_military_governor_army_core_attack_factor = 0 }
 set_variable = { XSM_the_military_governor_supply_combat_penalties_on_core_factor = 0 }
 set_variable = { XSM_the_military_governor_stability_factor = 0 }
 set_variable = { XSM_the_military_governor_war_support_factor = 0 }
-set_variable = { CHI_warlord_army_political_power_gain = 0 }
-set_variable = { CHI_warlord_army_army_core_attack_factor = 0 }
-set_variable = { CHI_warlord_army_army_core_defence_factor = 0 }
-set_variable = { CHI_warlord_army_production_speed_buildings_factor = 0 }
-set_variable = { CHI_warlord_army_army_infantry_attack_factor = 0 }
-set_variable = { CHI_warlord_army_army_infantry_defence_factor = 0 }
-set_variable = { CHI_warlord_army_special_forces_cap = 0 }
-set_variable = { CHI_warlord_army_special_forces_out_of_supply_factor = 0 }
-set_variable = { warlord_faction_influence_war_score_factor = 0 }
-set_variable = { warlord_faction_influence_contribution_factor = 0 }
 
-set_variable = { RNG_state_shintoism_surrender_limit = 0 }
-set_variable = { RNG_state_shintoism_war_support_factor = 0 }
-set_variable = { RNG_state_shintoism_pocket_penalty = 0 }
-set_variable = { RNG_state_shintoism_stability_factor = 0 }
-set_variable = { RNG_state_shintoism_army_core_defence_factor = 0 }
-set_variable = { RNG_state_shintoism_research_speed_factor = 0 }
-set_variable = { RNG_state_shintoism_recruitable_population_factor = 0 }
-set_variable = { RNG_state_shintoism_political_power_gain = 0 }
 
-# The Ma Clique Collective 
-set_variable = { CHI_ma_clique_collective_cavalry_attack_factor = 0.05 }
-set_variable = { CHI_ma_clique_collective_political_power_factor = 0 }
-set_variable = { CHI_ma_clique_collective_production_speed_infrastructure_factor = 0 }
-set_variable = { CHI_ma_clique_collective_conscription_factor = 0 }
-set_variable = { CHI_ma_clique_collective_cavalry_defence_factor = 0 }
-set_variable = { CHI_ma_clique_collective_army_core_defence_factor = 0 }
+
+
+
 
 IF = {
 	limit = {
@@ -71,12 +49,8 @@ IF = {
 	set_technology = {
 		gw_artillery = 1
 	}
-	add_ideas = {
-		CHI_warlord_looting_idea
-	}
-	add_dynamic_modifier = {
-		modifier = CHI_ma_clique_collective
-	}	
+	
+		
 	ELSE = {
 		#recruit_character = XSM_ma_hongbin
 		#recruit_character = XSM_ma_buqing
@@ -103,16 +77,7 @@ IF = {
 set_stability = 0.5
 set_war_support = 0.5
 
-if = {
-	limit = {
-		has_dlc = "Waking the Tiger"
-	}
-	add_ideas = {
-		PRC_government_corruption
-		CHI_ineffective_bureaucracy_warlord
-		CHI_warlord_state_idea
-	}
-}
+
 
 1939.1.1 = {
 

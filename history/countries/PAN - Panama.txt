@@ -101,9 +101,9 @@ set_popularities = {
 		elections_allowed = yes
 	}
 	#recruit_character = PAN_juan_demostenes_arosemena
-	promote_character = PAN_juan_demostenes_arosemena
+	#promote_character = PAN_juan_demostenes_arosemena
 	#recruit_character = PAN_july_portocarrero
-	promote_character = PAN_july_portocarrero
-	retire_character = PAN_harmodio_arias_madrid
-	retire_character = PAN_bartolomé_sinibaldi
+	#promote_character = PAN_july_portocarrero
+	#retire_character = PAN_harmodio_arias_madrid
+	#retire_character = PAN_bartolomé_sinibaldi
 }

@@ -6,14 +6,12 @@ tags={
 	"National Focuses"
 	"Ideologies"
 }
-replace_path="common/abilities"
 replace_path="common/ai_focuses"
 replace_path="common/ai_strategy"
 replace_path="common/ai_templates"
 replace_path="common/ai_strategy_plans"
 replace_path="common/ai_equipment"
 
-replace_path="common/autonomous_states"
 replace_path="common/bop"
 replace_path="common/characters"
 replace_path="common/country_tag_aliases"
@@ -23,7 +21,6 @@ replace_path="common/decisions/categories"
 replace_path="common/dynamic_modifiers"
 replace_path="common/focus_inlay_windows"
 replace_path="common/ideas"
-replace_path="common/military_industrial_organization/organizations"
 replace_path="common/national_focus"
 
 replace_path="common/scripted_effects"
