@@ -47,6 +47,6 @@ replace_path="localisation/replace"
 
 
 
+path="mod/IORebooted"
 name="Imperium Orientis: Undead"
 supported_version="1.19.*"
-path="mod/IMPERIUMORIENTIS/placeholder-average-mod-which-is-never-released---"
