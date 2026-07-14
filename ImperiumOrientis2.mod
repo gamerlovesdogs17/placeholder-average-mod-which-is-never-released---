@@ -22,6 +22,7 @@ replace_path="common/dynamic_modifiers"
 replace_path="common/focus_inlay_windows"
 replace_path="common/ideas"
 replace_path="common/national_focus"
+replace_path="common/military_industrial_organization/organizations"
 
 replace_path="common/scripted_effects"
 replace_path="common/scripted_localisation"
