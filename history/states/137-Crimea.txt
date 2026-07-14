@@ -1,24 +1,24 @@
 state = {
 	id = 137
 	name = "STATE_137"
-	manpower = 1061607
+	manpower = 2061607
 	
-	state_category = city
+	state_category = large_city
 
 	history = {
 
-		owner = SOV
+		owner = CRI
 
 		victory_points = {
 			3686 20 # Sevastopol
 		}
 
 		victory_points = {
-			9680 1 # Kerch
+			9680 5 # Kerch
 		}
 
 		victory_points = {
-			6704 1 # Yalta
+			6704 3 # Yalta
 		}
 
 		victory_points = {
@@ -49,17 +49,10 @@ state = {
 			
 		}
 
-		add_core_of = SOV
+
 		add_core_of = CRI
 
-		1939.1.1 = {
-			buildings = {
-				dockyard = 2
-				3686 = {
-					naval_facility = 1 # Sevastopol Naval Facilties
-				}
-			}
-		}
+
 	}
 
 	provinces = {
